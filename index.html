@@ -1,23 +1,84 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>My One Page</title>
-    <style>
-      body {
-        font: 16px system-ui, Arial;
-        margin: 0;
-        display: grid;
-        place-items: center;
-        height: 100vh;
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <h1>Hello 👋</h1>
-      <p>This is my single-page site.</p>
-    </main>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hook Fish and Chicken</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --brand:#2c3291;
+      --ink:#1d1d1f;
+      --bg:#fafafa;
+      --card:#ffffff;
+      --radius:16px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body {
+      font-family:"Cairo",system-ui,Arial,sans-serif;
+      background:var(--bg);
+      color:var(--ink);
+    }
+    .shell {
+      max-width:760px;
+      margin:0 auto;
+      padding:16px;
+      text-align:center;
+    }
+    .logo img {
+      max-width:220px;
+      margin:20px auto;
+      display:block;
+    }
+    h1 {
+      font-size:32px;
+      font-weight:900;
+      color:var(--brand);
+      margin-top:10px;
+    }
+    .addr {
+      margin-top:8px;
+      font-size:18px;
+      font-weight:700;
+    }
+    .phone {
+      margin-top:4px;
+      font-size:18px;
+      font-weight:700;
+      color:var(--brand);
+    }
+    .links {
+      margin-top:20px;
+      display:flex;
+      justify-content:center;
+      gap:12px;
+    }
+    .links a {
+      text-decoration:none;
+      background:var(--brand);
+      color:#fff;
+      padding:12px 20px;
+      border-radius:12px;
+      font-weight:700;
+      transition:.2s ease;
+    }
+    .links a:hover {
+      background:#1f236b;
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <div class="logo">
+      <img src="https://images.getbento.com/accounts/10272d6e9f332e56ddc68400fd025c47/media/images/63143HookFishChicken-Logo.png" alt="Hook Fish and Chicken Logo">
+    </div>
+    <h1>Hook Fish and Chicken</h1>
+    <div class="addr">810 Watertower Ln, West Carrollton</div>
+    <div class="phone">(937) 247-5504</div>
+
+    <div class="links">
+      <a href="/specials">View Specials</a>
+      <a href="tel:+19372475504">Call Now</a>
+    </div>
+  </div>
+</body>
 </html>
