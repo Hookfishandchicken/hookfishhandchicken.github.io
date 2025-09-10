@@ -4,11 +4,13 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Menu • Hook Fish & Chicken</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
 <style>
   body {
     margin: 0;
-    padding-bottom: 80px; /* space for sticky button */
+    padding-bottom: 90px; /* space for sticky button */
     background: #fff;
+    font-family: "Cairo", Arial, sans-serif;
   }
   img {
     width: 100%;
@@ -25,17 +27,24 @@
     z-index: 100;
     padding: 0;
     margin: 0;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0, #fff 18px);
+    display: flex;
+    justify-content: center;
   }
   .cta a {
-    display: block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    text-align: center;
-    padding: 18px 0;
-    background: #2c3291; /* your blue */
+    max-width: 760px;
+    padding: 16px 20px;
+    border-radius: 14px;
+    background: #b51616; /* Red */
     color: #fff;
-    font-size: 18px;
-    font-weight: bold;
     text-decoration: none;
+    font-weight: 900;
+    font-size: 18px;
+    box-shadow: 0 8px 20px rgba(181,22,22,.3);
   }
 </style>
 </head>
