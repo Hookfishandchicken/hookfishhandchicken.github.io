@@ -1,11 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Menu - Hook Fish and Chicken</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Menu • Hook Fish & Chicken</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    /* Brand palette */
+    --brand:#2c3291;           /* your blue */
+    --ink:#0e0f16;
+    --card:#ffffff;
+    --bg:#f7f8fc;
+    --muted:#6b7280;
+    --accent:#ffd21f;          /* menu yellow */
+    --radius:16px;
+  }
+
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    font-family:"Cairo", system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+    background:var(--bg);
+    color:var(--ink);
+    padding-bottom:92px; /* space for sticky bar */
+  }
+
+  .shell{max-width:880px;margin:0 auto;padding:16px}
+
+  /* Header */
+  .hdr{
+    background:var(--card);
+    border-radius:var(--radius);
+    padding:18px 16px;
+    text-align:center;
+    box-shadow:0 6px 20px rgba(0,0,0,.07);
+  }
+  .brandline{
+    display:flex;align-items:center;gap:12px;justify-content:center;flex-wrap:wrap
+  }
+  .brandline img{height:40px;width:auto}
+  .brandline h1{
+    margin:0;font-weight:900;font-size:26px;letter-spacing:.3px;color:var(--brand)
+  }
+  .sub{margin:6px 0 0;color:var(--muted);font-size:14px}
+  .addr{font-weight:800;margin-top:6px}
+
+  /* Sections */
+  .section{margin-top:18px}
+  .section .title{
+    background:var(--brand);
+    color:#111;
+    padding:10px 14px;
+    border-radius:14px;
+    text-align:center;
+    font-weight:900;
+    font-size:18px;
+    letter-spacing:.3px;
+    color:#fff;
+    position:relative;
+  }
+  .section .title::after{
+    content:"";
+    position:absolute;inset:3px;
+    border-radius:12px;
+    border:3px solid var(--accent);
+    pointer-events:none;
+    opacity:.9;
+  }
+
+  .card{
+    background:var(--card);
+    border-radius:14px;
+    padding:8px;
+    margin-top:10px;
+    box-shadow:0 6px 16px rgba(0,0,0,.05);
+  }
+
+  /* Menu rows (single line with dot leaders) */
+  .row{
+    display:flex;align-items:center;gap:10px;
+    padding:10px 10px;
+    border-radius:10px;
+    font-size:16px;
+    line-height:1;
+  }
+  .row:nth-child(odd){background:#fafaff}
+  .name{
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+    font-weight:700;
+    max-width:62%;
+  }
+  .dots{
+    flex:1 1 auto; min-width:20px; height:1px; align-self:center;
+    background:repeating-linear-gradient(90deg, transparent 0 6px, rgba(0,0,0,.12) 6px 8px);
+  }
+  .price{
+    white-space:nowrap;font-weight:800;color:var(--brand)
+  }
+  .subprice{color:#333;font-weight:700}
+
+  /* Stacked price groups for sizes on one line */
+  .price .opt{margin-left:8px}
+  .price .lbl{color:#6b7280;font-weight:700;margin-right:2px}
+
+  /* Sticky CTA */
+  .cta{
+    position:fixed;left:0;right:0;bottom:0;z-index:60;
+    padding:12px 16px env(safe-area-inset-bottom);
+    background:linear-gradient(180deg, rgba(247,248,252,0) 0, rgba(247,248,252,1) 18px);
+    display:flex;justify-content:center;
+  }
+  .cta a{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:100%;max-width:880px;
+    padding:16px 18px;border-radius:14px;
+    background:var(--brand);color:#fff;text-decoration:none;
+    font-weight:900;font-size:18px;
+    box-shadow:0 10px 24px rgba(44,50,145,.35);
+  }
+
+  /* Tiny helper for section notes */
+  .note{margin:8px 2px 0;color:#4b5563;font-size:13px;text-align:center}
+</style>
 </head>
 <body>
-  <h1>Our Menu</h1>
-  <p>Here you will find our delicious fish, chicken, and sides.</p>
+
+  <div class="shell">
+    <div class="hdr">
+      <div class="brandline">
+        <img src="https://images.getbento.com/accounts/10272d6e9f332e56ddc68400fd025c47/media/images/63143HookFishChicken-Logo.png" alt="Hook Fish & Chicken logo">
+        <h1>HOOK FISH &amp; CHICKEN — MENU</h1>
+      </div>
+      <div class="sub">Fresh, crispy, and cooked to order</div>
+      <div class="addr">810 Watertower Ln, West Carrollton</div>
+    </div>
+
+    <!-- FISH DINNERS -->
+    <div class="section">
+      <div class="title">FISH DINNERS</div>
+      <div class="card">
+        <div class="row"><div class="name">Tilapia</div><div class="dots"></div><div class="price"><span class="opt"><span class="lbl">2pc</span>$9.99</span> <span class="opt"><span class="lbl">3pc</span>$11.99</span> <span class="opt"><span class="lbl">4pc</span>$15.99</span></div></div>
+        <div class="row"><div class="name">Whiting</div><div class="dots"></div><div class="price"><span class="opt"><span class="lbl">2pc</span>$9.99</span> <span class="opt"><span class="lbl">3pc</span>$11.99</span> <span class="opt"><span class="lbl">4pc</span>$15.99</span></div></div>
+        <div class="row"><div class="name">Perch</div><div class="dots"></div><div class="price"><span class="opt"><span class="lbl">2pc</span>$9.99</span> <span class="opt"><span class="lbl">3pc</span>$11.99</span> <span class="opt"><span class="lbl">4pc</span>$15.99</span></div></div>
+        <div class="row"><div class="name">Catfish Fillet</div><div class="dots"></div><div class="price"><span class="opt"><span class="lbl">2pc</span>$9.99</span> <span class="opt"><span class="lbl">3pc</span>$11.99</span> <span class="opt"><span class="lbl">4pc</span>$15.99</span></div></div>
+        <div class="row"><div class="name">Catfish Nuggets</div><div class="dots"></div><div class="price"><span class="opt"><span class="lbl">10pc</span>$9.99</span> <span class="opt"><span class="lbl">15pc</span>$11.99</span> <span class="opt"><span class="lbl">25pc</span>$15.99</span></div></div>
+        <div class="row"><div class="name">Cod Fish</div><div class="dots"></div><div class="price"><span class="opt"><span class="lbl">2pc</span>$10.99</span> <span class="opt"><span class="lbl">3pc</span>$12.99</span> <span class="opt"><span class="lbl">4pc</span>$16.99</span></div></div>
+        <div class="row"><div class="name">Orange Roughy</div><div class="dots"></div><div class="price"><span class="opt"><span class="lbl">2pc</span>$11.99</span> <span class="opt"><span class="lbl">3pc</span>$14.99</span> <span class="opt"><span class="lbl">4pc</span>$18.99</span></div></div>
+        <div class="row"><div class="name">Shrimp</div><div class="dots"></div><div class="price"><span class="opt"><span class="lbl">10pc</span>$10.99</span> <span class="opt"><span class="lbl">15pc</span>$13.99</span> <span class="opt"><span class="lbl">25pc</span>$18.99</span></div></div>
+        <div class="row"><div class="name">Jumbo Shrimp</div><div class="dots"></div><div class="price"><span class="opt"><span class="lbl">7pc</span>$12.99</span> <span class="opt"><span class="lbl">14pc</span>$21.99</span></div></div>
+        <div class="note">All dinners served with fries or coleslaw.</div>
+      </div>
+    </div>
+
+    <!-- CHICKEN DINNERS -->
+    <div class="section">
+      <div class="title">CHICKEN DINNERS</div>
+      <div class="card">
+        <div class="row"><div class="name">Whole Wings</div><div class="dots"></div><div class="price"><span class="opt"><span class="lbl">3</span>$6.99</span> <span class="opt"><span class="lbl">4</span>$7.99</span> <span class="opt"><span class="lbl">5</span>$8.99</span> <span class="opt"><span class="lbl">6</span>$10.99</span> <span class="opt"><span class="lbl">8</span>$11.99</span> <span class="opt"><span class="lbl">10</span>$15.99</span> <span class="opt"><span class="lbl">12</span>$17.99</span></div></div>
+        <div class="row"><div class="name">Party Wings</div><div class="dots"></div><div class="price"><span class="opt"><span class="lbl">6</span>$7.99</span> <span class="opt"><span class="lbl">8</span>$9.99</span> <span class="opt"><span class="lbl">10</span>$10.99</span> <span class="opt"><span class="lbl">15</span>$14.99</span></div></div>
+        <div class="row"><div class="name">Boneless Wings</div><div class="dots"></div><div class="price"><span class="opt"><span class="lbl">6</span>$7.99</span> <span class="opt"><span class="lbl">8</span>$9.99</span> <span class="opt"><span class="lbl">10</span>$12.99</span></div></div>
+        <div class="row"><div class="name">Chicken Tenders</div><div class="dots"></div><div class="price"><span class="opt"><span class="lbl">3pc</span>$9.99</span> <span class="opt"><span class="lbl">4pc</span>$11.99</span> <span class="opt"><span class="lbl">5pc</span>$13.99</span> <span class="opt"><span class="lbl">6pc</span>$14.99</span> <span class="opt"><span class="lbl">8pc</span>$17.99</span></div></div>
+        <div class="row"><div class="name">Legs &amp; Thighs</div><div class="dots"></div><div class="price"><span class="opt"><span class="lbl">3pc</span>$6.99</span> <span class="opt"><span class="lbl">4pc</span>$8.99</span> <span class="opt"><span class="lbl">6pc</span>$9.99</span> <span class="opt"><span class="lbl">8pc</span>$12.99</span> <span class="opt"><span class="lbl">10pc</span>$14.99</span></div></div>
+        <div class="row"><div class="name">Chicken Nuggets</div><div class="dots"></div><div class="price"><span class="opt"><span class="lbl">10pc</span>$8.99</span> <span class="opt"><span class="lbl">18pc</span>$13.99</span></div></div>
+        <div class="row"><div class="name">Chicken Gizzards</div><div class="dots"></div><div class="price"><span class="opt"><span class="lbl">15pc</span>$8.99</span> <span class="opt"><span class="lbl">25pc</span>$11.99</span></div></div>
+        <div class="row"><div class="name">Fish &amp; Chicken Combo (choose any 2)</div><div class="dots"></div><div class="price">$15.99</div></div>
+        <div class="note">All dinners served with fries or coleslaw.</div>
+      </div>
+    </div>
+
+    <!-- FAMILY MEALS -->
+    <div class="section">
+      <div class="title">FAMILY MEALS</div>
+      <div class="card">
+        <div class="row"><div class="name">Whole Wings</div><div class="dots"></div><div class="price">20 $29.99 • 30 $41.99 • 40 $55.99 • 50 $69.99 • 75 $99.99 • 100 $139.99 • 150 $189.99</div></div>
+        <div class="row"><div class="name">Boneless Wings</div><div class="dots"></div><div class="price">20 $24.99 • 30 $32.99 • 40 $41.99 • 50 $52.99</div></div>
+        <div class="row"><div class="name">Chicken Tenders</div><div class="dots"></div><div class="price">10 $24.99 • 15 $34.99 • 20 $45.99 • 30 $54.99</div></div>
+        <div class="row"><div class="name">Legs &amp; Thighs (with fries)</div><div class="dots"></div><div class="price">15 $25.99 • 20 $35.99 • 30 $49.99 • 50 $69.99</div></div>
+        <div class="row"><div class="name">Party Wings</div><div class="dots"></div><div class="price">20 $19.99 • 30 $27.99 • 40 $37.99 • 50 $45.99 • 75 $64.99 • 100 $89.99</div></div>
+        <div class="row"><div class="name">Fish Trays</div><div class="dots"></div><div class="price">12pc Catfish Fillet $44.99 • 21pc Catfish Fillet $69.99 • 12pc Mixed Fillet $39.99 • 21pc Mixed Fillet $59.99</div></div>
+      </div>
+    </div>
+
+    <!-- CHICAGO STYLE -->
+    <div class="section">
+      <div class="title">CHICAGO STYLE (Served with Fries)</div>
+      <div class="card">
+        <div class="row"><div class="name">Double Cheeseburger</div><div class="dots"></div><div class="price">$9.99</div></div>
+        <div class="row"><div class="name">Cheese Burger</div><div class="dots"></div><div class="price">$7.99</div></div>
+        <div class="row"><div class="name">Gyro Sandwich</div><div class="dots"></div><div class="price">$9.99</div></div>
+        <div class="row"><div class="name">Gyro Burger</div><div class="dots"></div><div class="price">$9.99</div></div>
+        <div class="row"><div class="name">Gyro Platter</div><div class="dots"></div><div class="price">$14.99</div></div>
+        <div class="row"><div class="name">Chicken Gyro</div><div class="dots"></div><div class="price">$9.99</div></div>
+        <div class="row"><div class="name">Philly Steak</div><div class="dots"></div><div class="price">$9.99</div></div>
+        <div class="row"><div class="name">Buffalo Chicken Philly</div><div class="dots"></div><div class="price">$9.99</div></div>
+        <div class="row"><div class="name">Chicken Teriyaki</div><div class="dots"></div><div class="price">$9.99</div></div>
+        <div class="row"><div class="name">Fish Sandwich</div><div class="dots"></div><div class="price">$8.99</div></div>
+        <div class="row"><div class="name">Turkey Burger</div><div class="dots"></div><div class="price">$8.99</div></div>
+        <div class="row"><div class="name">Chicken Sandwich</div><div class="dots"></div><div class="price">$8.99</div></div>
+      </div>
+    </div>
+
+    <!-- SIDES -->
+    <div class="section">
+      <div class="title">SIDE ORDERS</div>
+      <div class="card">
+        <div class="row"><div class="name">Coleslaw</div><div class="dots"></div><div class="price"><span class="subprice">Small $1.99 • Large $2.99</span></div></div>
+        <div class="row"><div class="name">French Fries</div><div class="dots"></div><div class="price"><span class="subprice">Small $2.99 • Large $4.99</span></div></div>
+        <div class="row"><div class="name">Okra</div><div class="dots"></div><div class="price">$4.99</div></div>
+        <div class="row"><div class="name">10 Hush Puppies</div><div class="dots"></div><div class="price">$4.99</div></div>
+        <div class="row"><div class="name">Macaroni &amp; Cheese</div><div class="dots"></div><div class="price">$4.99</div></div>
+        <div class="row"><div class="name">Jalapeños</div><div class="dots"></div><div class="price">$4.99</div></div>
+        <div class="row"><div class="name">Onion Rings</div><div class="dots"></div><div class="price">$4.99</div></div>
+        <div class="row"><div class="name">Zucchini Sticks</div><div class="dots"></div><div class="price">$4.99</div></div>
+        <div class="row"><div class="name">Mushrooms</div><div class="dots"></div><div class="price">$4.99</div></div>
+        <div class="row"><div class="name">Cheese Sticks</div><div class="dots"></div><div class="price">$4.99</div></div>
+        <div class="row"><div class="name">Baked Beans</div><div class="dots"></div><div class="price">$4.99</div></div>
+        <div class="row"><div class="name">Cauliflower</div><div class="dots"></div><div class="price">$4.99</div></div>
+        <div class="row"><div class="name">Fried Pickles</div><div class="dots"></div><div class="price">$4.99</div></div>
+      </div>
+    </div>
+
+    <!-- KIDS -->
+    <div class="section">
+      <div class="title">KIDS MEAL</div>
+      <div class="card">
+        <div class="row"><div class="name">6pc Catfish Nuggets</div><div class="dots"></div><div class="price">$6.99</div></div>
+        <div class="row"><div class="name">6pc Chicken Nuggets</div><div class="dots"></div><div class="price">$6.99</div></div>
+        <div class="row"><div class="name">3pc Legs</div><div class="dots"></div><div class="price">$6.99</div></div>
+        <div class="row"><div class="name">2pc Chicken Tenders</div><div class="dots"></div><div class="price">$7.99</div></div>
+        <div class="row"><div class="name">Cheese Burger w/ Fries</div><div class="dots"></div><div class="price">$7.99</div></div>
+      </div>
+    </div>
+
+    <!-- SALADS -->
+    <div class="section">
+      <div class="title">SALADS</div>
+      <div class="card">
+        <div class="row"><div class="name">Garden Salad</div><div class="dots"></div><div class="price"><span class="subprice">Small $5.99 • Large $7.99</span></div></div>
+        <div class="row"><div class="name">Chicken Salad</div><div class="dots"></div><div class="price"><span class="subprice">Small $7.99 • Large $9.99</span></div></div>
+        <div class="row"><div class="name">Gyro Salad</div><div class="dots"></div><div class="price"><span class="subprice">Small $7.99 • Large $9.99</span></div></div>
+      </div>
+    </div>
+
+    <!-- DESSERTS & DRINKS -->
+    <div class="section">
+      <div class="title">DESSERTS</div>
+      <div class="card">
+        <div class="row"><div class="name">Cheesecake</div><div class="dots"></div><div class="price">$3.99</div></div>
+        <div class="row"><div class="name">Banana Pudding</div><div class="dots"></div><div class="price">$3.99</div></div>
+        <div class="row"><div class="name">Cake</div><div class="dots"></div><div class="price">$4.99</div></div>
+        <div class="row"><div class="name">Baklava</div><div class="dots"></div><div class="price">$3.99</div></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="title">DRINKS</div>
+      <div class="card">
+        <div class="row"><div class="name">Can</div><div class="dots"></div><div class="price">$1.50</div></div>
+        <div class="row"><div class="name">Bottle</div><div class="dots"></div><div class="price">$2.50</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky call button -->
+  <div class="cta">
+    <a href="tel:+19372475504" aria-label="Call Hook Fish and Chicken (937) 247-5504">Call Now (937) 247-5504</a>
+  </div>
 </body>
 </html>
