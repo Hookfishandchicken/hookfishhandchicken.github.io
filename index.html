@@ -1,84 +1,1244 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Hook Fish and Chicken</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hook Fish & Chicken - Price Hill | Cincinnati Wings, Fish & Chicken</title>
+  <meta name="description" content="Hook Fish & Chicken - Price Hill in Cincinnati serves wings, fish, chicken, sandwiches, subs, grilled items and more. Order pickup or delivery online, visit us at 3801 Glenway Ave, or call (513) 978-0829." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <style>
     :root {
-      --brand:#2c3291;
-      --ink:#1d1d1f;
-      --bg:#fafafa;
-      --card:#ffffff;
-      --radius:16px;
+      --blue: #004aad;
+      --red: #cc0000;
+      --white: #ffffff;
+      --dark: #101828;
+      --muted: #667085;
+      --light: #f5f8ff;
+      --soft-red: #fff1f1;
+      --shadow: 0 18px 45px rgba(16, 24, 40, 0.16);
+      --radius-xl: 28px;
+      --radius-lg: 22px;
+      --radius-md: 16px;
     }
-    *{box-sizing:border-box;margin:0;padding:0}
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
-      font-family:"Cairo",system-ui,Arial,sans-serif;
-      background:var(--bg);
-      color:var(--ink);
+      font-family: 'Cairo', sans-serif;
+      color: var(--dark);
+      background: linear-gradient(180deg, #ffffff 0%, #f3f7ff 45%, #ffffff 100%);
+      overflow-x: hidden;
+      padding-bottom: 96px;
     }
-    .shell {
-      max-width:760px;
-      margin:0 auto;
-      padding:16px;
-      text-align:center;
+
+    a {
+      color: inherit;
+      text-decoration: none;
     }
-    .logo img {
-      max-width:220px;
-      margin:20px auto;
-      display:block;
+
+    img {
+      max-width: 100%;
+      display: block;
     }
+
+    .page {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .floating-bg {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .bubble {
+      position: absolute;
+      border-radius: 999px;
+      opacity: 0.18;
+      filter: blur(1px);
+      animation: floatBubble 9s ease-in-out infinite;
+    }
+
+    .bubble.one {
+      width: 180px;
+      height: 180px;
+      background: var(--blue);
+      top: 8%;
+      right: -80px;
+    }
+
+    .bubble.two {
+      width: 130px;
+      height: 130px;
+      background: var(--red);
+      top: 48%;
+      left: -60px;
+      animation-delay: 1.5s;
+    }
+
+    .bubble.three {
+      width: 220px;
+      height: 220px;
+      background: var(--blue);
+      bottom: 5%;
+      right: -120px;
+      animation-delay: 3s;
+    }
+
+    @keyframes floatBubble {
+      0%, 100% { transform: translateY(0) scale(1); }
+      50% { transform: translateY(-24px) scale(1.05); }
+    }
+
+    .top-strip {
+      background: var(--blue);
+      color: var(--white);
+      text-align: center;
+      padding: 9px 14px;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.2px;
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(0, 74, 173, 0.08);
+      padding: 12px 16px;
+    }
+
+    .nav-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
+    }
+
+    .brand img {
+      width: 54px;
+      height: 54px;
+      object-fit: contain;
+      border-radius: 14px;
+      background: #fff;
+      box-shadow: 0 8px 20px rgba(0, 74, 173, 0.12);
+    }
+
+    .brand-text strong {
+      display: block;
+      font-size: 15px;
+      line-height: 1.15;
+      font-weight: 900;
+      color: var(--blue);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 190px;
+    }
+
+    .brand-text span {
+      display: block;
+      font-size: 12px;
+      line-height: 1.2;
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .nav-call {
+      background: var(--red);
+      color: var(--white);
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 900;
+      box-shadow: 0 10px 20px rgba(204, 0, 0, 0.24);
+      white-space: nowrap;
+    }
+
+    .section {
+      padding: 54px 18px;
+    }
+
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      padding: 34px 18px 52px;
+      position: relative;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 26px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--soft-red);
+      color: var(--red);
+      border: 1px solid rgba(204, 0, 0, 0.14);
+      padding: 8px 13px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 900;
+      margin-bottom: 14px;
+      animation: slideUp 0.7s ease both;
+    }
+
+    .eyebrow::before {
+      content: '';
+      width: 9px;
+      height: 9px;
+      background: var(--red);
+      border-radius: 999px;
+      box-shadow: 0 0 0 6px rgba(204, 0, 0, 0.12);
+    }
+
     h1 {
-      font-size:32px;
-      font-weight:900;
-      color:var(--brand);
-      margin-top:10px;
+      color: var(--blue);
+      font-size: clamp(36px, 11vw, 72px);
+      line-height: 0.95;
+      letter-spacing: -1.8px;
+      font-weight: 900;
+      margin-bottom: 18px;
+      animation: slideUp 0.8s ease both;
     }
-    .addr {
-      margin-top:8px;
-      font-size:18px;
-      font-weight:700;
+
+    .hero-copy {
+      color: #344054;
+      font-size: 17px;
+      line-height: 1.65;
+      font-weight: 700;
+      margin-bottom: 22px;
+      animation: slideUp 0.9s ease both;
     }
-    .phone {
-      margin-top:4px;
-      font-size:18px;
-      font-weight:700;
-      color:var(--brand);
+
+    .hero-copy strong {
+      color: var(--red);
+      font-weight: 900;
     }
-    .links {
-      margin-top:20px;
-      display:flex;
-      justify-content:center;
-      gap:12px;
+
+    .hero-actions {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      animation: slideUp 1s ease both;
     }
-    .links a {
-      text-decoration:none;
-      background:var(--brand);
-      color:#fff;
-      padding:12px 20px;
-      border-radius:12px;
-      font-weight:700;
-      transition:.2s ease;
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      border-radius: 999px;
+      padding: 15px 18px;
+      font-size: 15px;
+      font-weight: 900;
+      border: 0;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
-    .links a:hover {
-      background:#1f236b;
+
+    .btn:active {
+      transform: scale(0.98);
+    }
+
+    .btn-primary {
+      background: var(--red);
+      color: var(--white);
+      box-shadow: 0 16px 28px rgba(204, 0, 0, 0.25);
+    }
+
+    .btn-secondary {
+      background: var(--blue);
+      color: var(--white);
+      box-shadow: 0 16px 28px rgba(0, 74, 173, 0.25);
+    }
+
+    .btn-light {
+      background: var(--white);
+      color: var(--blue);
+      border: 1px solid rgba(0, 74, 173, 0.13);
+      box-shadow: 0 14px 26px rgba(16, 24, 40, 0.08);
+    }
+
+    .hero-card {
+      position: relative;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      background: #fff;
+      box-shadow: var(--shadow);
+      animation: popIn 0.9s ease both;
+    }
+
+    .hero-card img {
+      width: 100%;
+      height: 330px;
+      object-fit: cover;
+    }
+
+    .hero-card-overlay {
+      position: absolute;
+      inset: auto 14px 14px 14px;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      padding: 14px;
+      box-shadow: 0 14px 30px rgba(16, 24, 40, 0.16);
+    }
+
+    .hero-card-overlay strong {
+      display: block;
+      color: var(--blue);
+      font-size: 20px;
+      font-weight: 900;
+      line-height: 1.1;
+    }
+
+    .hero-card-overlay span {
+      display: block;
+      color: #475467;
+      font-weight: 700;
+      font-size: 13px;
+      margin-top: 4px;
+    }
+
+    .float-tag {
+      position: absolute;
+      z-index: 4;
+      background: var(--red);
+      color: var(--white);
+      font-weight: 900;
+      border-radius: 999px;
+      padding: 10px 13px;
+      font-size: 13px;
+      box-shadow: 0 14px 25px rgba(204, 0, 0, 0.25);
+      animation: bounceSoft 3s ease-in-out infinite;
+    }
+
+    .float-tag.one {
+      top: -10px;
+      right: 16px;
+    }
+
+    .float-tag.two {
+      bottom: 92px;
+      left: -4px;
+      background: var(--blue);
+      animation-delay: 1s;
+    }
+
+    @keyframes bounceSoft {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-9px); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes popIn {
+      from { opacity: 0; transform: scale(0.95) translateY(14px); }
+      to { opacity: 1; transform: scale(1) translateY(0); }
+    }
+
+    .quick-info {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .info-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 18px;
+      border: 1px solid rgba(0, 74, 173, 0.08);
+      box-shadow: 0 12px 28px rgba(16, 24, 40, 0.08);
+    }
+
+    .info-card small {
+      color: var(--red);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+    }
+
+    .info-card strong {
+      display: block;
+      color: var(--blue);
+      font-size: 18px;
+      font-weight: 900;
+      margin-top: 3px;
+      line-height: 1.2;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 26px;
+    }
+
+    .section-heading .mini {
+      display: inline-block;
+      color: var(--red);
+      font-weight: 900;
+      font-size: 13px;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      margin-bottom: 7px;
+    }
+
+    .section-heading h2 {
+      color: var(--blue);
+      font-size: clamp(30px, 9vw, 52px);
+      line-height: 1.02;
+      font-weight: 900;
+      letter-spacing: -1px;
+    }
+
+    .section-heading p {
+      color: #475467;
+      font-size: 16px;
+      line-height: 1.65;
+      font-weight: 700;
+      margin-top: 12px;
+    }
+
+    .promo-card {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, var(--red) 0%, #e73b3b 50%, var(--blue) 100%);
+      color: var(--white);
+      border-radius: 32px;
+      padding: 26px 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .promo-card::before {
+      content: 'FREE';
+      position: absolute;
+      top: -20px;
+      right: -10px;
+      font-size: 90px;
+      font-weight: 900;
+      opacity: 0.08;
+      letter-spacing: -4px;
+    }
+
+    .promo-card h2 {
+      font-size: 34px;
+      line-height: 1;
+      font-weight: 900;
+      margin-bottom: 12px;
+    }
+
+    .promo-card p {
+      font-size: 16px;
+      line-height: 1.65;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    .promo-steps {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin: 18px 0;
+    }
+
+    .step {
+      background: rgba(255,255,255,0.14);
+      border: 1px solid rgba(255,255,255,0.22);
+      border-radius: 18px;
+      padding: 14px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      backdrop-filter: blur(10px);
+    }
+
+    .step span {
+      flex: 0 0 32px;
+      width: 32px;
+      height: 32px;
+      border-radius: 999px;
+      background: var(--white);
+      color: var(--red);
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+    }
+
+    .step strong {
+      display: block;
+      font-size: 15px;
+      font-weight: 900;
+      line-height: 1.25;
+    }
+
+    .step small {
+      display: block;
+      opacity: 0.9;
+      font-weight: 700;
+      line-height: 1.4;
+      margin-top: 3px;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    .menu-card {
+      position: relative;
+      overflow: hidden;
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      border: 1px solid rgba(0, 74, 173, 0.08);
+      box-shadow: 0 12px 28px rgba(16, 24, 40, 0.08);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .menu-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 38px rgba(16, 24, 40, 0.13);
+    }
+
+    .menu-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      background: var(--light);
+      color: var(--blue);
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    .menu-card h3 {
+      color: var(--blue);
+      font-size: 22px;
+      font-weight: 900;
+      margin-bottom: 7px;
+      line-height: 1.1;
+    }
+
+    .menu-card p {
+      color: #475467;
+      font-size: 15px;
+      line-height: 1.65;
+      font-weight: 700;
+    }
+
+    .image-band {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    .food-photo {
+      position: relative;
+      border-radius: 30px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      min-height: 280px;
+      background: #e6efff;
+    }
+
+    .food-photo img {
+      width: 100%;
+      height: 100%;
+      min-height: 280px;
+      object-fit: cover;
+    }
+
+    .photo-caption {
+      position: absolute;
+      left: 14px;
+      right: 14px;
+      bottom: 14px;
+      padding: 14px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.94);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 12px 24px rgba(16, 24, 40, 0.14);
+    }
+
+    .photo-caption strong {
+      color: var(--blue);
+      font-size: 19px;
+      line-height: 1.1;
+      font-weight: 900;
+    }
+
+    .photo-caption p {
+      color: #475467;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 1.45;
+      margin-top: 4px;
+    }
+
+    .order-panel {
+      background: var(--blue);
+      color: var(--white);
+      border-radius: 34px;
+      padding: 24px 20px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .order-panel::after {
+      content: '';
+      position: absolute;
+      width: 210px;
+      height: 210px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.08);
+      right: -110px;
+      bottom: -90px;
+    }
+
+    .order-panel h2 {
+      font-size: 33px;
+      line-height: 1.05;
+      font-weight: 900;
+      margin-bottom: 12px;
+    }
+
+    .order-panel p {
+      font-size: 16px;
+      line-height: 1.65;
+      font-weight: 700;
+      opacity: 0.95;
+      margin-bottom: 18px;
+    }
+
+    .order-buttons {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .feature-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin-top: 18px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .feature {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 18px;
+      padding: 13px;
+    }
+
+    .feature b {
+      color: #fff;
+      font-size: 14px;
+      line-height: 1.35;
+    }
+
+    .feature span {
+      font-size: 18px;
+      line-height: 1;
+    }
+
+    .reviews-style {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    .quote-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 19px;
+      box-shadow: 0 12px 28px rgba(16, 24, 40, 0.08);
+      border: 1px solid rgba(0, 74, 173, 0.08);
+    }
+
+    .quote-card .stars {
+      color: var(--red);
+      font-size: 15px;
+      letter-spacing: 2px;
+      margin-bottom: 7px;
+    }
+
+    .quote-card p {
+      color: #344054;
+      font-size: 15px;
+      line-height: 1.65;
+      font-weight: 700;
+    }
+
+    .quote-card strong {
+      display: block;
+      color: var(--blue);
+      font-weight: 900;
+      margin-top: 10px;
+    }
+
+    .map-wrap {
+      background: var(--white);
+      border-radius: 34px;
+      padding: 16px;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(0, 74, 173, 0.08);
+    }
+
+    .map-wrap iframe {
+      width: 100%;
+      height: 320px;
+      border: 0;
+      border-radius: 24px;
+    }
+
+    .location-card {
+      padding: 18px 4px 6px;
+    }
+
+    .location-card h3 {
+      color: var(--blue);
+      font-size: 26px;
+      line-height: 1.1;
+      font-weight: 900;
+      margin-bottom: 8px;
+    }
+
+    .location-card p {
+      color: #475467;
+      font-size: 15px;
+      line-height: 1.6;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+
+    .footer {
+      background: #071a3c;
+      color: var(--white);
+      padding: 42px 18px 28px;
+      text-align: center;
+    }
+
+    .footer-logo {
+      width: 86px;
+      height: 86px;
+      margin: 0 auto 12px;
+      object-fit: contain;
+      background: #fff;
+      border-radius: 22px;
+      padding: 6px;
+    }
+
+    .footer h2 {
+      font-size: 28px;
+      line-height: 1.05;
+      font-weight: 900;
+      margin-bottom: 8px;
+    }
+
+    .footer p {
+      color: rgba(255,255,255,0.78);
+      font-weight: 700;
+      line-height: 1.6;
+      max-width: 620px;
+      margin: 0 auto 16px;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .footer-links a {
+      color: var(--white);
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.13);
+      padding: 9px 13px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .sticky-call {
+      position: fixed;
+      left: 14px;
+      right: 14px;
+      bottom: 14px;
+      z-index: 60;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      background: rgba(255,255,255,0.94);
+      border: 1px solid rgba(0, 74, 173, 0.12);
+      backdrop-filter: blur(16px);
+      border-radius: 999px;
+      padding: 10px;
+      box-shadow: 0 18px 42px rgba(16, 24, 40, 0.22);
+    }
+
+    .sticky-call-text {
+      flex: 1;
+      padding-left: 8px;
+      line-height: 1.1;
+      min-width: 0;
+    }
+
+    .sticky-call-text small {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 800;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .sticky-call-text strong {
+      display: block;
+      color: var(--blue);
+      font-size: 15px;
+      font-weight: 900;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .sticky-call a {
+      flex: 0 0 auto;
+      background: var(--red);
+      color: var(--white);
+      padding: 14px 20px;
+      border-radius: 999px;
+      font-size: 15px;
+      font-weight: 900;
+      box-shadow: 0 12px 24px rgba(204, 0, 0, 0.25);
+      animation: pulseCall 1.8s ease-in-out infinite;
+    }
+
+    @keyframes pulseCall {
+      0%, 100% { transform: scale(1); box-shadow: 0 12px 24px rgba(204, 0, 0, 0.25); }
+      50% { transform: scale(1.04); box-shadow: 0 16px 32px rgba(204, 0, 0, 0.34); }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(26px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .desktop-only {
+      display: none;
+    }
+
+    @media (min-width: 680px) {
+      .hero-actions,
+      .order-buttons,
+      .quick-info,
+      .promo-steps,
+      .feature-list,
+      .reviews-style {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .image-band {
+        grid-template-columns: 1.2fr 0.8fr;
+      }
+
+      .brand-text strong {
+        max-width: none;
+      }
+    }
+
+    @media (min-width: 980px) {
+      body {
+        padding-bottom: 0;
+      }
+
+      .hero {
+        padding-top: 60px;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1.05fr 0.95fr;
+        gap: 46px;
+      }
+
+      .hero-actions,
+      .order-buttons {
+        grid-template-columns: repeat(3, auto);
+        justify-content: start;
+      }
+
+      .quick-info {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .menu-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .promo-card {
+        padding: 42px;
+      }
+
+      .promo-card h2,
+      .order-panel h2 {
+        font-size: 48px;
+      }
+
+      .promo-steps,
+      .feature-list,
+      .reviews-style {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .map-wrap {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 18px;
+        align-items: center;
+      }
+
+      .map-wrap iframe {
+        height: 420px;
+      }
+
+      .sticky-call {
+        left: auto;
+        right: 22px;
+        bottom: 22px;
+        width: 360px;
+      }
+
+      .desktop-only {
+        display: inline;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="shell">
-    <div class="logo">
-      <img src="https://images.getbento.com/accounts/10272d6e9f332e56ddc68400fd025c47/media/images/63143HookFishChicken-Logo.png" alt="Hook Fish and Chicken Logo">
+  <div class="page">
+    <div class="floating-bg" aria-hidden="true">
+      <div class="bubble one"></div>
+      <div class="bubble two"></div>
+      <div class="bubble three"></div>
     </div>
-    <h1>Hook Fish and Chicken</h1>
-    <div class="addr">810 Watertower Ln, West Carrollton</div>
-    <div class="phone">(937) 247-5504</div>
 
-    <div class="links">
-      <a href="/specials">View Specials</a>
-      <a href="tel:+19372475504">Call Now</a>
+    <div class="top-strip">Fresh flavor in Price Hill • Wings • Fish • Chicken • Pickup • Delivery</div>
+
+    <nav class="nav">
+      <div class="nav-inner">
+        <a class="brand" href="#top" aria-label="Hook Fish & Chicken Price Hill home">
+          <img src="https://images.getbento.com/accounts/10272d6e9f332e56ddc68400fd025c47/media/images/63143HookFishChicken-Logo.png" alt="Hook Fish & Chicken Logo" />
+          <div class="brand-text">
+            <strong>Hook Fish & Chicken</strong>
+            <span>Price Hill • Cincinnati</span>
+          </div>
+        </a>
+        <a class="nav-call" href="tel:15139780829">Call Now</a>
+      </div>
+    </nav>
+
+    <header class="hero" id="top">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Price Hill’s flavor stop</div>
+          <h1>Hot wings, crispy fish, fresh chicken, made for your cravings.</h1>
+          <p class="hero-copy">
+            Welcome to <strong>Hook Fish & Chicken - Price Hill</strong>, your neighborhood spot for bold flavor, fresh food, and meals that hit the table with real comfort. From party wings and golden fish to chicken, sandwiches, subs, grilled items, and loaded favorites, we keep the menu packed with choices for lunch, dinner, family meals, quick bites, and late cravings.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://order.online/store/-749234/?pickup=true" target="_blank" rel="noopener">Order Pickup</a>
+            <a class="btn btn-secondary" href="https://order.online/store/-749234/?delivery=true" target="_blank" rel="noopener">Order Delivery</a>
+            <a class="btn btn-light" href="https://www.google.com/maps/search/?api=1&query=3801+Glenway+Ave,+Cincinnati" target="_blank" rel="noopener">Get Directions</a>
+          </div>
+
+          <div class="quick-info">
+            <div class="info-card reveal">
+              <small>Call us</small>
+              <strong>(513) 978-0829</strong>
+            </div>
+            <div class="info-card reveal">
+              <small>Visit us</small>
+              <strong>3801 Glenway Ave, Cincinnati</strong>
+            </div>
+            <div class="info-card reveal">
+              <small>Order style</small>
+              <strong>Pickup online or delivery online</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <span class="float-tag one">Free 6 Party Wings</span>
+          <span class="float-tag two">Order Online</span>
+          <img src="https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/692076040_26748406381480051_1172299787216287253_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=EHMvuFMTRukQ7kNvwHQzfIJ&_nc_oc=AdplYd5QC2QzJ_HfEobEfgvCXhOoUkod4_uui1qz2lotZ-qAFqC9gBMq5aZ0gBfjpAI&_nc_zt=23&_nc_ht=scontent-ord5-1.xx&_nc_gid=so3nwG382Z81GSh0nQhjCw&_nc_ss=7b2a8&oh=00_Af4P7EEvWWbCs4KaHiV0uPBmPsJgzDdvTQS-R2NiZo2iYA&oe=6A1A1704" alt="Hook Fish & Chicken wings and food" />
+          <div class="hero-card-overlay">
+            <strong>Flavor that shows up hot, crispy, and ready.</strong>
+            <span>Perfect for pickup, delivery, lunch breaks, dinner runs, and sharing with family.</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="section reveal" id="promo">
+      <div class="container">
+        <div class="promo-card">
+          <h2>Get Free 6 Party Wings</h2>
+          <p>
+            Want a quick reason to stop by? Follow our Facebook page, show your support, and redeem your free 6 party wings in store. It is our way of saying thank you to the Price Hill community for showing love to Hook Fish & Chicken.
+          </p>
+          <div class="promo-steps">
+            <div class="step">
+              <span>1</span>
+              <div>
+                <strong>Follow our Facebook page</strong>
+                <small>Tap the button and follow Hook Fish & Chicken - Price Hill.</small>
+              </div>
+            </div>
+            <div class="step">
+              <span>2</span>
+              <div>
+                <strong>Show it in store</strong>
+                <small>Bring your phone and show our team that you followed the page.</small>
+              </div>
+            </div>
+            <div class="step">
+              <span>3</span>
+              <div>
+                <strong>Enjoy free wings</strong>
+                <small>Redeem your free 6 party wings and enjoy the flavor.</small>
+              </div>
+            </div>
+          </div>
+          <a class="btn btn-light" href="https://www.facebook.com/hookpricehill" target="_blank" rel="noopener">Follow Our Facebook Page</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="menu">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="mini">What we serve</span>
+          <h2>A menu built for real cravings.</h2>
+          <p>
+            Whether you want crispy, saucy, grilled, stacked, or something made for sharing, our menu gives you options that feel familiar, filling, and full of flavor.
+          </p>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-card reveal">
+            <div class="menu-icon">🍗</div>
+            <h3>Party Wings</h3>
+            <p>Hot, flavorful wings made for quick meals, game nights, office lunches, and family orders. Choose your favorites and make it a meal worth remembering.</p>
+          </article>
+          <article class="menu-card reveal">
+            <div class="menu-icon">🐟</div>
+            <h3>Fish Favorites</h3>
+            <p>Golden, crispy fish with the kind of crunch and flavor that keeps people coming back. Perfect when you want something simple, satisfying, and bold.</p>
+          </article>
+          <article class="menu-card reveal">
+            <div class="menu-icon">🥪</div>
+            <h3>Sandwiches & Subs</h3>
+            <p>Loaded, fresh, and easy to enjoy on the go. Our sandwiches and subs are made for lunch breaks, dinner runs, and anyone who wants a full bite.</p>
+          </article>
+          <article class="menu-card reveal">
+            <div class="menu-icon">🔥</div>
+            <h3>Grilled Items</h3>
+            <p>Looking for something with a different flavor profile? Our grilled options bring another layer to the menu with taste, comfort, and variety.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="container image-band">
+        <div class="food-photo">
+          <img src="https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/692076040_26748406381480051_1172299787216287253_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=EHMvuFMTRukQ7kNvwHQzfIJ&_nc_oc=AdplYd5QC2QzJ_HfEobEfgvCXhOoUkod4_uui1qz2lotZ-qAFqC9gBMq5aZ0gBfjpAI&_nc_zt=23&_nc_ht=scontent-ord5-1.xx&_nc_gid=so3nwG382Z81GSh0nQhjCw&_nc_ss=7b2a8&oh=00_Af4P7EEvWWbCs4KaHiV0uPBmPsJgzDdvTQS-R2NiZo2iYA&oe=6A1A1704" alt="Wings and food from Hook Fish & Chicken" />
+          <div class="photo-caption">
+            <strong>Made for sharing, built for cravings.</strong>
+            <p>Order for yourself, the family, your team, or your next quick food run.</p>
+          </div>
+        </div>
+        <div class="food-photo">
+          <img src="https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/692076040_26748406381480051_1172299787216287253_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=EHMvuFMTRukQ7kNvwHQzfIJ&_nc_oc=AdplYd5QC2QzJ_HfEobEfgvCXhOoUkod4_uui1qz2lotZ-qAFqC9gBMq5aZ0gBfjpAI&_nc_zt=23&_nc_ht=scontent-ord5-1.xx&_nc_gid=so3nwG382Z81GSh0nQhjCw&_nc_ss=7b2a8&oh=00_Af4P7EEvWWbCs4KaHiV0uPBmPsJgzDdvTQS-R2NiZo2iYA&oe=6A1A1704" alt="Hook Fish and Chicken wings" />
+          <div class="photo-caption">
+            <strong>Fast, fresh, and full of flavor.</strong>
+            <p>Pickup or delivery makes it easy to enjoy Hook wherever you are.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="order">
+      <div class="container">
+        <div class="order-panel">
+          <h2>Order online your way.</h2>
+          <p>
+            Planning dinner, grabbing lunch, feeding the family, or ordering from work? Hook Fish & Chicken - Price Hill makes it easy. Choose pickup when you want it ready for you, or choose delivery when you want the flavor brought to your door.
+          </p>
+          <div class="order-buttons">
+            <a class="btn btn-primary" href="https://order.online/store/-749234/?pickup=true" target="_blank" rel="noopener">Order Pickup Online</a>
+            <a class="btn btn-light" href="https://order.online/store/-749234/?delivery=true" target="_blank" rel="noopener">Order Delivery Online</a>
+            <a class="btn btn-light" href="tel:15139780829">Call (513) 978-0829</a>
+          </div>
+          <div class="feature-list">
+            <div class="feature"><span>✅</span><b>Easy online pickup ordering for a faster food run.</b></div>
+            <div class="feature"><span>🚗</span><b>Delivery available when you order online.</b></div>
+            <div class="feature"><span>📍</span><b>Conveniently located at 3801 Glenway Ave in Cincinnati.</b></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="why">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="mini">Why Hook Price Hill</span>
+          <h2>Comfort food with neighborhood energy.</h2>
+          <p>
+            Food should be easy to order, exciting to open, and satisfying from the first bite. That is the experience we want every customer to feel at Hook Fish & Chicken - Price Hill.
+          </p>
+        </div>
+
+        <div class="reviews-style">
+          <div class="quote-card reveal">
+            <div class="stars">★★★★★</div>
+            <p>For the quick lunch crowd, we keep it simple: bold flavor, easy online ordering, and meals that feel complete without making your day complicated.</p>
+            <strong>Quick lunch favorite</strong>
+          </div>
+          <div class="quote-card reveal">
+            <div class="stars">★★★★★</div>
+            <p>For family meals, party wings and crispy favorites make it easy to bring everyone around the table with something they actually want to eat.</p>
+            <strong>Made for sharing</strong>
+          </div>
+          <div class="quote-card reveal">
+            <div class="stars">★★★★★</div>
+            <p>For cravings, our menu has the variety you need: wings, fish, chicken, grilled items, sandwiches, subs, sides, and more in one place.</p>
+            <strong>Plenty of options</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="location">
+      <div class="container">
+        <div class="section-heading">
+          <span class="mini">Find us</span>
+          <h2>Visit Hook Fish & Chicken - Price Hill.</h2>
+          <p>
+            We are located at 3801 Glenway Ave in Cincinnati. Tap below for directions, call us, or order online for pickup or delivery.
+          </p>
+        </div>
+
+        <div class="map-wrap">
+          <iframe title="Map to Hook Fish & Chicken Price Hill" loading="lazy" allowfullscreen src="https://www.google.com/maps?q=3801%20Glenway%20Ave%2C%20Cincinnati&output=embed"></iframe>
+          <div class="location-card">
+            <h3>3801 Glenway Ave, Cincinnati</h3>
+            <p>
+              Stop by for wings, fish, chicken, sandwiches, subs, grilled items, and more. We are ready for pickup orders, delivery orders, and walk-in cravings.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=3801+Glenway+Ave,+Cincinnati" target="_blank" rel="noopener">Get Directions</a>
+              <a class="btn btn-primary" href="tel:15139780829">Call Now</a>
+              <a class="btn btn-light" href="https://www.facebook.com/hookpricehill" target="_blank" rel="noopener">Facebook Page</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <img class="footer-logo" src="https://images.getbento.com/accounts/10272d6e9f332e56ddc68400fd025c47/media/images/63143HookFishChicken-Logo.png" alt="Hook Fish & Chicken Logo" />
+      <h2>Hook Fish & Chicken - Price Hill</h2>
+      <p>
+        Wings, fish, chicken, sandwiches, subs, grilled items, pickup, delivery, and the flavor Price Hill is looking for. Visit us at 3801 Glenway Ave, Cincinnati, or call (513) 978-0829.
+      </p>
+      <div class="footer-links">
+        <a href="https://order.online/store/-749234/?pickup=true" target="_blank" rel="noopener">Pickup</a>
+        <a href="https://order.online/store/-749234/?delivery=true" target="_blank" rel="noopener">Delivery</a>
+        <a href="https://www.facebook.com/hookpricehill" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=3801+Glenway+Ave,+Cincinnati" target="_blank" rel="noopener">Directions</a>
+      </div>
+    </footer>
+
+    <div class="sticky-call" role="complementary" aria-label="Sticky call button">
+      <div class="sticky-call-text">
+        <small>Hook Fish & Chicken - Price Hill</small>
+        <strong>Ready to order? Call now.</strong>
+      </div>
+      <a href="tel:15139780829">Call Now</a>
     </div>
   </div>
+
+  <script>
+    const revealElements = document.querySelectorAll('.reveal');
+
+    const revealOnScroll = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.12 });
+
+    revealElements.forEach((element) => revealOnScroll.observe(element));
+  </script>
 </body>
 </html>
