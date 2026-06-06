@@ -182,7 +182,7 @@
       margin-bottom: 22px;
     }
 
-    .field label {
+    .field label.main-label {
       display: block;
       color: var(--blue);
       font-size: 18px;
@@ -199,33 +199,43 @@
       line-height: 1.4;
     }
 
-    .stars {
+    .rating-row {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       gap: 9px;
     }
 
-    .star-btn {
-      height: 54px;
+    .rating-row input {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .star-label {
+      height: 56px;
       border: 2px solid rgba(0, 74, 173, 0.12);
       background: var(--light);
       border-radius: 17px;
-      font-size: 25px;
+      font-size: 27px;
       cursor: pointer;
-      transition: transform 0.16s ease, background 0.16s ease, border-color 0.16s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.16s ease, background 0.16s ease, border-color 0.16s ease, box-shadow 0.16s ease;
+      user-select: none;
     }
 
-    .star-btn:active {
+    .star-label:active {
       transform: scale(0.95);
     }
 
-    .star-btn.active {
+    .star-label.active {
       background: #fff1f1;
       border-color: var(--red);
       box-shadow: 0 8px 18px rgba(204, 0, 0, 0.14);
     }
 
-    input {
+    input[type="tel"] {
       width: 100%;
       height: 60px;
       border-radius: 18px;
@@ -239,7 +249,7 @@
       font-family: 'Cairo', sans-serif;
     }
 
-    input:focus {
+    input[type="tel"]:focus {
       border-color: var(--blue);
       box-shadow: 0 0 0 5px rgba(0, 74, 173, 0.1);
       background: #ffffff;
@@ -506,34 +516,55 @@
 
         <form id="surveyForm">
           <div class="field">
-            <label>How do you rate our food?</label>
+            <label class="main-label">How do you rate our food? <span style="color:#cc0000;">*</span></label>
             <div class="hint">Tap a rating from 1 to 5 stars.</div>
-            <div class="stars" data-rating-group="foodRating">
-              <button type="button" class="star-btn" data-value="1">★</button>
-              <button type="button" class="star-btn" data-value="2">★</button>
-              <button type="button" class="star-btn" data-value="3">★</button>
-              <button type="button" class="star-btn" data-value="4">★</button>
-              <button type="button" class="star-btn" data-value="5">★</button>
+
+            <div class="rating-row" data-rating-group="foodRating">
+              <input type="radio" name="foodRating" id="food1" value="1" required>
+              <label class="star-label" for="food1" data-value="1">★</label>
+
+              <input type="radio" name="foodRating" id="food2" value="2">
+              <label class="star-label" for="food2" data-value="2">★</label>
+
+              <input type="radio" name="foodRating" id="food3" value="3">
+              <label class="star-label" for="food3" data-value="3">★</label>
+
+              <input type="radio" name="foodRating" id="food4" value="4">
+              <label class="star-label" for="food4" data-value="4">★</label>
+
+              <input type="radio" name="foodRating" id="food5" value="5">
+              <label class="star-label" for="food5" data-value="5">★</label>
             </div>
           </div>
 
           <div class="field">
-            <label>How do you rate our restaurant?</label>
+            <label class="main-label">How do you rate our restaurant? <span style="color:#cc0000;">*</span></label>
             <div class="hint">Tap a rating from 1 to 5 stars.</div>
-            <div class="stars" data-rating-group="restaurantRating">
-              <button type="button" class="star-btn" data-value="1">★</button>
-              <button type="button" class="star-btn" data-value="2">★</button>
-              <button type="button" class="star-btn" data-value="3">★</button>
-              <button type="button" class="star-btn" data-value="4">★</button>
-              <button type="button" class="star-btn" data-value="5">★</button>
+
+            <div class="rating-row" data-rating-group="restaurantRating">
+              <input type="radio" name="restaurantRating" id="restaurant1" value="1" required>
+              <label class="star-label" for="restaurant1" data-value="1">★</label>
+
+              <input type="radio" name="restaurantRating" id="restaurant2" value="2">
+              <label class="star-label" for="restaurant2" data-value="2">★</label>
+
+              <input type="radio" name="restaurantRating" id="restaurant3" value="3">
+              <label class="star-label" for="restaurant3" data-value="3">★</label>
+
+              <input type="radio" name="restaurantRating" id="restaurant4" value="4">
+              <label class="star-label" for="restaurant4" data-value="4">★</label>
+
+              <input type="radio" name="restaurantRating" id="restaurant5" value="5">
+              <label class="star-label" for="restaurant5" data-value="5">★</label>
             </div>
           </div>
 
           <div class="field">
-            <label>Your phone number</label>
+            <label class="main-label" for="phone">Your phone number <span style="color:#cc0000;">*</span></label>
             <input
               type="tel"
               id="phone"
+              name="phone"
               inputmode="tel"
               autocomplete="tel"
               placeholder="Enter your phone number"
@@ -596,8 +627,6 @@
   <script>
     const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzjziNbSUGT07Gzqq_37E1ZwsLziyeGzb8hij8hKwq110p8UfRBMpdGWODFNruNqxD4EQ/exec';
 
-    let foodRating = 0;
-    let restaurantRating = 0;
     let ipAddress = '';
 
     const form = document.getElementById('surveyForm');
@@ -605,25 +634,28 @@
     const submitBtn = document.getElementById('submitBtn');
     const loadingOverlay = document.getElementById('loadingOverlay');
 
-    document.querySelectorAll('.stars').forEach(group => {
-      const ratingName = group.dataset.ratingGroup;
-      const buttons = group.querySelectorAll('.star-btn');
+    document.querySelectorAll('.rating-row').forEach(group => {
+      const labels = group.querySelectorAll('.star-label');
+      const radios = group.querySelectorAll('input[type="radio"]');
 
-      buttons.forEach(button => {
-        button.addEventListener('click', () => {
-          const value = Number(button.dataset.value);
+      labels.forEach(label => {
+        label.addEventListener('click', function() {
+          const selectedValue = Number(this.dataset.value);
 
-          if (ratingName === 'foodRating') {
-            foodRating = value;
-          }
+          labels.forEach(star => {
+            const starValue = Number(star.dataset.value);
+            star.classList.toggle('active', starValue <= selectedValue);
+          });
+        });
+      });
 
-          if (ratingName === 'restaurantRating') {
-            restaurantRating = value;
-          }
+      radios.forEach(radio => {
+        radio.addEventListener('change', function() {
+          const selectedValue = Number(this.value);
 
-          buttons.forEach(btn => {
-            const btnValue = Number(btn.dataset.value;
-            btn.classList.toggle('active', btnValue <= value);
+          labels.forEach(star => {
+            const starValue = Number(star.dataset.value);
+            star.classList.toggle('active', starValue <= selectedValue);
           });
         });
       });
@@ -646,14 +678,16 @@
 
       hideError();
 
+      const foodRatingInput = document.querySelector('input[name="foodRating"]:checked');
+      const restaurantRatingInput = document.querySelector('input[name="restaurantRating"]:checked');
       const phone = document.getElementById('phone').value.trim();
 
-      if (!foodRating) {
+      if (!foodRatingInput) {
         showError('Please rate our food.');
         return;
       }
 
-      if (!restaurantRating) {
+      if (!restaurantRatingInput) {
         showError('Please rate our restaurant.');
         return;
       }
@@ -672,8 +706,8 @@
 
       submitWithJsonp({
         action: 'submit',
-        foodRating: foodRating,
-        restaurantRating: restaurantRating,
+        foodRating: foodRatingInput.value,
+        restaurantRating: restaurantRatingInput.value,
         phone: phone,
         ipAddress: ipAddress,
         userAgent: navigator.userAgent
