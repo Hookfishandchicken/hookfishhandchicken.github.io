@@ -1,0 +1,164 @@
+const SPREADSHEET_NAME = 'Hook Survey';
+const SHEET_NAME = 'Sheet1';
+
+function doGet() {
+  return HtmlService
+    .createHtmlOutputFromFile('Index')
+    .setTitle('Hook Fish & Chicken Survey')
+    .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
+}
+
+function submitSurvey(data) {
+  const lock = LockService.getScriptLock();
+  lock.waitLock(10000);
+
+  try {
+    const ss = getSpreadsheet_();
+    const sheet = getOrCreateSheet_(ss);
+
+    setupHeaders_(sheet);
+
+    const phone = cleanPhone_(data.phone);
+    const foodRating = Number(data.foodRating);
+    const restaurantRating = Number(data.restaurantRating);
+    const ipAddress = String(data.ipAddress || '').trim();
+    const userAgent = String(data.userAgent || '').trim();
+    const submittedAt = new Date();
+
+    if (!phone || phone.length < 10) {
+      return {
+        status: 'error',
+        message: 'Please enter a valid phone number.'
+      };
+    }
+
+    if (!foodRating || foodRating < 1 || foodRating > 5) {
+      return {
+        status: 'error',
+        message: 'Please rate our food.'
+      };
+    }
+
+    if (!restaurantRating || restaurantRating < 1 || restaurantRating > 5) {
+      return {
+        status: 'error',
+        message: 'Please rate our restaurant.'
+      };
+    }
+
+    if (!ipAddress) {
+      return {
+        status: 'error',
+        message: 'We could not verify your device. Please try again.'
+      };
+    }
+
+    const existing = sheet.getDataRange().getValues();
+
+    let alreadyRedeemed = false;
+
+    for (let i = 1; i < existing.length; i++) {
+      const rowIp = String(existing[i][4] || '').trim();
+      const rowStatus = String(existing[i][6] || '').trim().toLowerCase();
+
+      if (rowIp === ipAddress && rowStatus === 'approved') {
+        alreadyRedeemed = true;
+        break;
+      }
+    }
+
+    if (alreadyRedeemed) {
+      sheet.appendRow([
+        submittedAt,
+        phone,
+        foodRating,
+        restaurantRating,
+        ipAddress,
+        userAgent,
+        'Rejected - Duplicate IP',
+        ''
+      ]);
+
+      return {
+        status: 'duplicate',
+        message: 'You already redeemed the discount.'
+      };
+    }
+
+    sheet.appendRow([
+      submittedAt,
+      phone,
+      foodRating,
+      restaurantRating,
+      ipAddress,
+      userAgent,
+      'Approved',
+      submittedAt
+    ]);
+
+    return {
+      status: 'approved',
+      message: 'You received 10% off!'
+    };
+
+  } catch (error) {
+    return {
+      status: 'error',
+      message: 'Something went wrong. Please try again.',
+      details: error.message
+    };
+  } finally {
+    lock.releaseLock();
+  }
+}
+
+function getSpreadsheet_() {
+  const files = DriveApp.getFilesByName(SPREADSHEET_NAME);
+
+  if (!files.hasNext()) {
+    throw new Error('Spreadsheet named "' + SPREADSHEET_NAME + '" was not found.');
+  }
+
+  return SpreadsheetApp.open(files.next());
+}
+
+function getOrCreateSheet_(ss) {
+  let sheet = ss.getSheetByName(SHEET_NAME);
+
+  if (!sheet) {
+    sheet = ss.insertSheet(SHEET_NAME);
+  }
+
+  return sheet;
+}
+
+function setupHeaders_(sheet) {
+  const headers = [
+    'Timestamp',
+    'Phone Number',
+    'Food Rating',
+    'Restaurant Rating',
+    'IP Address',
+    'User Agent',
+    'Status',
+    'Redeemed At'
+  ];
+
+  const firstRow = sheet.getRange(1, 1, 1, headers.length).getValues()[0];
+  const hasHeaders = firstRow.some(cell => String(cell).trim() !== '');
+
+  if (!hasHeaders) {
+    sheet.getRange(1, 1, 1, headers.length).setValues([headers]);
+    sheet.getRange(1, 1, 1, headers.length)
+      .setFontWeight('bold')
+      .setBackground('#004aad')
+      .setFontColor('#ffffff');
+
+    sheet.setFrozenRows(1);
+    sheet.autoResizeColumns(1, headers.length);
+  }
+}
+
+function cleanPhone_(phone) {
+  return String(phone || '').replace(/\D/g, '');
+}
