@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>Follow Hook Fish & Chicken</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --blue: #004aad;
+      --red: #cc0000;
+      --white: #ffffff;
+      --dark: #101828;
+      --muted: #667085;
+      --light: #f5f8ff;
+      --shadow: 0 18px 45px rgba(16, 24, 40, 0.18);
+      --radius-xl: 30px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html, body {
+      min-height: 100%;
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(180deg, #ffffff 0%, #f3f7ff 45%, #ffffff 100%);
+      color: var(--dark);
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      overflow-x: hidden;
+    }
+
+    .app {
+      width: 100%;
+      max-width: 520px;
+      min-height: 100vh;
+      padding: 18px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+    }
+
+    .bubble {
+      position: fixed;
+      border-radius: 999px;
+      opacity: 0.14;
+      pointer-events: none;
+      animation: floatBubble 8s ease-in-out infinite;
+      z-index: 0;
+    }
+
+    .bubble.one {
+      width: 180px;
+      height: 180px;
+      background: var(--blue);
+      top: 8%;
+      right: -80px;
+    }
+
+    .bubble.two {
+      width: 130px;
+      height: 130px;
+      background: var(--red);
+      bottom: 15%;
+      left: -60px;
+      animation-delay: 1.5s;
+    }
+
+    @keyframes floatBubble {
+      0%, 100% {
+        transform: translateY(0) scale(1);
+      }
+
+      50% {
+        transform: translateY(-22px) scale(1.06);
+      }
+    }
+
+    .card {
+      width: 100%;
+      position: relative;
+      z-index: 2;
+      background: rgba(255, 255, 255, 0.96);
+      border: 1px solid rgba(0, 74, 173, 0.1);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .top {
+      background: linear-gradient(135deg, var(--blue), #075dd4);
+      color: var(--white);
+      padding: 28px 22px 30px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .top::after {
+      content: '';
+      position: absolute;
+      width: 180px;
+      height: 180px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.09);
+      right: -85px;
+      top: -80px;
+    }
+
+    .logo-wrap {
+      width: 96px;
+      height: 96px;
+      margin: 0 auto 16px;
+      background: var(--white);
+      border-radius: 24px;
+      padding: 8px;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+      position: relative;
+      z-index: 2;
+    }
+
+    .logo-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+
+    .top h1 {
+      font-size: 34px;
+      line-height: 1.02;
+      font-weight: 900;
+      letter-spacing: -0.8px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .top p {
+      margin-top: 12px;
+      font-size: 16px;
+      line-height: 1.5;
+      font-weight: 700;
+      opacity: 0.96;
+      position: relative;
+      z-index: 2;
+    }
+
+    .content {
+      padding: 26px 20px 24px;
+      text-align: center;
+    }
+
+    .headline {
+      color: var(--blue);
+      font-size: 25px;
+      line-height: 1.15;
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+
+    .subtext {
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.55;
+      font-weight: 700;
+      margin-bottom: 22px;
+    }
+
+    .social-buttons {
+      display: grid;
+      gap: 14px;
+    }
+
+    .social-btn {
+      width: 100%;
+      min-height: 68px;
+      border-radius: 999px;
+      border: none;
+      color: var(--white);
+      font-size: 19px;
+      font-weight: 900;
+      font-family: 'Cairo', sans-serif;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      box-shadow: 0 16px 28px rgba(16, 24, 40, 0.16);
+      transition: transform 0.16s ease, box-shadow 0.16s ease;
+    }
+
+    .social-btn:active {
+      transform: scale(0.98);
+    }
+
+    .facebook {
+      background: #1877f2;
+    }
+
+    .instagram {
+      background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+    }
+
+    .icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.18);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      flex: 0 0 auto;
+    }
+
+    .note {
+      margin-top: 22px;
+      background: #fff1f1;
+      color: var(--red);
+      border: 1px solid rgba(204, 0, 0, 0.14);
+      border-radius: 18px;
+      padding: 14px;
+      font-size: 14px;
+      font-weight: 900;
+      line-height: 1.4;
+    }
+
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      margin-top: 18px;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="app">
+    <div class="bubble one"></div>
+    <div class="bubble two"></div>
+
+    <section class="card">
+      <div class="top">
+        <div class="logo-wrap">
+          <img src="https://images.getbento.com/accounts/10272d6e9f332e56ddc68400fd025c47/media/images/63143HookFishChicken-Logo.png" alt="Hook Fish & Chicken Logo">
+        </div>
+
+        <h1>Follow Hook Fish & Chicken</h1>
+        <p>Stay connected with us for fresh updates, specials, and local flavor.</p>
+      </div>
+
+      <div class="content">
+        <h2 class="headline">Show us some love online!</h2>
+        <p class="subtext">
+          Follow Hook Fish & Chicken - Price Hill on Facebook and Instagram.
+        </p>
+
+        <div class="social-buttons">
+          <a class="social-btn facebook" href="https://facebook.com/hookfcpricehill" target="_blank" rel="noopener">
+            <span class="icon">f</span>
+            Follow us on Facebook
+          </a>
+
+          <a class="social-btn instagram" href="https://instagram.com/hook.fishchicken" target="_blank" rel="noopener">
+            <span class="icon">◎</span>
+            Follow us on Instagram
+          </a>
+        </div>
+
+        <div class="note">
+          Show the staff that you followed us!
+        </div>
+
+        <div class="footer">
+          Hook Fish & Chicken - Price Hill
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
