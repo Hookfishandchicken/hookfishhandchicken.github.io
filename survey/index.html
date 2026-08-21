@@ -625,7 +625,7 @@
   </div>
 
   <script>
-    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzjziNbSUGT07Gzqq_37E1ZwsLziyeGzb8hij8hKwq110p8UfRBMpdGWODFNruNqxD4EQ/exec';
+    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwjz98VUYArznedeowkH3w9DjJ8ipkDkA3aMcQozKf9wcYYJr2MfZLm3EFJ590XrGcyNQ/exec';
 
     let ipAddress = '';
 
@@ -706,6 +706,7 @@
 
       submitWithJsonp({
         action: 'submit',
+        restaurant: 'Hook',
         foodRating: foodRatingInput.value,
         restaurantRating: restaurantRatingInput.value,
         phone: phone,
