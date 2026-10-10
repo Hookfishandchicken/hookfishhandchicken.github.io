@@ -1,0 +1,2425 @@
+{
+  "games": [
+    {
+      "date": "2026-10-11T13:30Z",
+      "home": {
+        "name": "Jacksonville Jaguars",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png"
+      },
+      "away": {
+        "name": "Philadelphia Eagles",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png"
+      }
+    },
+    {
+      "date": "2026-10-11T17:00Z",
+      "home": {
+        "name": "Green Bay Packers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png"
+      },
+      "away": {
+        "name": "Chicago Bears",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png"
+      }
+    },
+    {
+      "date": "2026-10-11T17:00Z",
+      "home": {
+        "name": "Tennessee Titans",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png"
+      },
+      "away": {
+        "name": "Houston Texans",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png"
+      }
+    },
+    {
+      "date": "2026-10-11T17:00Z",
+      "home": {
+        "name": "Miami Dolphins",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png"
+      },
+      "away": {
+        "name": "Cincinnati Bengals",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png"
+      }
+    },
+    {
+      "date": "2026-10-11T17:00Z",
+      "home": {
+        "name": "New England Patriots",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png"
+      },
+      "away": {
+        "name": "Las Vegas Raiders",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png"
+      }
+    },
+    {
+      "date": "2026-10-11T17:00Z",
+      "home": {
+        "name": "New Orleans Saints",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png"
+      },
+      "away": {
+        "name": "Minnesota Vikings",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png"
+      }
+    },
+    {
+      "date": "2026-10-11T17:00Z",
+      "home": {
+        "name": "New York Jets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png"
+      },
+      "away": {
+        "name": "Cleveland Browns",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png"
+      }
+    },
+    {
+      "date": "2026-10-11T17:00Z",
+      "home": {
+        "name": "Pittsburgh Steelers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png"
+      },
+      "away": {
+        "name": "Indianapolis Colts",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png"
+      }
+    },
+    {
+      "date": "2026-10-11T17:00Z",
+      "home": {
+        "name": "Washington Commanders",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png"
+      },
+      "away": {
+        "name": "New York Giants",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png"
+      }
+    },
+    {
+      "date": "2026-10-11T20:05Z",
+      "home": {
+        "name": "Los Angeles Chargers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png"
+      },
+      "away": {
+        "name": "Denver Broncos",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png"
+      }
+    },
+    {
+      "date": "2026-10-11T20:25Z",
+      "home": {
+        "name": "Arizona Cardinals",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ari.png"
+      },
+      "away": {
+        "name": "Detroit Lions",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png"
+      }
+    },
+    {
+      "date": "2026-10-11T20:25Z",
+      "home": {
+        "name": "Seattle Seahawks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png"
+      },
+      "away": {
+        "name": "San Francisco 49ers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png"
+      }
+    },
+    {
+      "date": "2026-10-12T00:20Z",
+      "home": {
+        "name": "Atlanta Falcons",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png"
+      },
+      "away": {
+        "name": "Baltimore Ravens",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png"
+      }
+    },
+    {
+      "date": "2026-10-13T00:15Z",
+      "home": {
+        "name": "Los Angeles Rams",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png"
+      },
+      "away": {
+        "name": "Buffalo Bills",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png"
+      }
+    },
+    {
+      "date": "2026-10-16T00:15Z",
+      "home": {
+        "name": "Denver Broncos",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png"
+      },
+      "away": {
+        "name": "Seattle Seahawks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png"
+      }
+    },
+    {
+      "date": "2026-10-18T13:30Z",
+      "home": {
+        "name": "Jacksonville Jaguars",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png"
+      },
+      "away": {
+        "name": "Houston Texans",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png"
+      }
+    },
+    {
+      "date": "2026-10-18T17:00Z",
+      "home": {
+        "name": "Atlanta Falcons",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png"
+      },
+      "away": {
+        "name": "Chicago Bears",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png"
+      }
+    },
+    {
+      "date": "2026-10-18T17:00Z",
+      "home": {
+        "name": "Cleveland Browns",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png"
+      },
+      "away": {
+        "name": "Baltimore Ravens",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png"
+      }
+    },
+    {
+      "date": "2026-10-18T17:00Z",
+      "home": {
+        "name": "Indianapolis Colts",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png"
+      },
+      "away": {
+        "name": "Tennessee Titans",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png"
+      }
+    },
+    {
+      "date": "2026-10-18T17:00Z",
+      "home": {
+        "name": "New England Patriots",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png"
+      },
+      "away": {
+        "name": "New York Jets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png"
+      }
+    },
+    {
+      "date": "2026-10-18T17:00Z",
+      "home": {
+        "name": "New York Giants",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png"
+      },
+      "away": {
+        "name": "New Orleans Saints",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png"
+      }
+    },
+    {
+      "date": "2026-10-18T17:00Z",
+      "home": {
+        "name": "Philadelphia Eagles",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png"
+      },
+      "away": {
+        "name": "Carolina Panthers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png"
+      }
+    },
+    {
+      "date": "2026-10-18T17:00Z",
+      "home": {
+        "name": "Tampa Bay Buccaneers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png"
+      },
+      "away": {
+        "name": "Pittsburgh Steelers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png"
+      }
+    },
+    {
+      "date": "2026-10-18T20:05Z",
+      "home": {
+        "name": "Los Angeles Rams",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png"
+      },
+      "away": {
+        "name": "Arizona Cardinals",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ari.png"
+      }
+    },
+    {
+      "date": "2026-10-18T20:25Z",
+      "home": {
+        "name": "Kansas City Chiefs",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png"
+      },
+      "away": {
+        "name": "Los Angeles Chargers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png"
+      }
+    },
+    {
+      "date": "2026-10-18T20:25Z",
+      "home": {
+        "name": "Las Vegas Raiders",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png"
+      },
+      "away": {
+        "name": "Buffalo Bills",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png"
+      }
+    },
+    {
+      "date": "2026-10-19T00:20Z",
+      "home": {
+        "name": "Green Bay Packers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png"
+      },
+      "away": {
+        "name": "Dallas Cowboys",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png"
+      }
+    },
+    {
+      "date": "2026-10-20T00:15Z",
+      "home": {
+        "name": "San Francisco 49ers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png"
+      },
+      "away": {
+        "name": "Washington Commanders",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png"
+      }
+    },
+    {
+      "date": "2026-10-23T00:15Z",
+      "home": {
+        "name": "Chicago Bears",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png"
+      },
+      "away": {
+        "name": "New England Patriots",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png"
+      }
+    },
+    {
+      "date": "2026-10-25T13:30Z",
+      "home": {
+        "name": "New Orleans Saints",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png"
+      },
+      "away": {
+        "name": "Pittsburgh Steelers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png"
+      }
+    },
+    {
+      "date": "2026-10-25T17:00Z",
+      "home": {
+        "name": "Atlanta Falcons",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png"
+      },
+      "away": {
+        "name": "San Francisco 49ers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png"
+      }
+    },
+    {
+      "date": "2026-10-25T17:00Z",
+      "home": {
+        "name": "Tennessee Titans",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png"
+      },
+      "away": {
+        "name": "Cleveland Browns",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png"
+      }
+    },
+    {
+      "date": "2026-10-25T17:00Z",
+      "home": {
+        "name": "Minnesota Vikings",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png"
+      },
+      "away": {
+        "name": "Indianapolis Colts",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png"
+      }
+    },
+    {
+      "date": "2026-10-25T17:00Z",
+      "home": {
+        "name": "New York Jets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png"
+      },
+      "away": {
+        "name": "Miami Dolphins",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png"
+      }
+    },
+    {
+      "date": "2026-10-25T17:00Z",
+      "home": {
+        "name": "Carolina Panthers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png"
+      },
+      "away": {
+        "name": "Tampa Bay Buccaneers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png"
+      }
+    },
+    {
+      "date": "2026-10-25T17:00Z",
+      "home": {
+        "name": "Baltimore Ravens",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png"
+      },
+      "away": {
+        "name": "Cincinnati Bengals",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png"
+      }
+    },
+    {
+      "date": "2026-10-25T17:00Z",
+      "home": {
+        "name": "Houston Texans",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png"
+      },
+      "away": {
+        "name": "New York Giants",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png"
+      }
+    },
+    {
+      "date": "2026-10-25T20:05Z",
+      "home": {
+        "name": "Arizona Cardinals",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ari.png"
+      },
+      "away": {
+        "name": "Denver Broncos",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png"
+      }
+    },
+    {
+      "date": "2026-10-25T20:25Z",
+      "home": {
+        "name": "Detroit Lions",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png"
+      },
+      "away": {
+        "name": "Green Bay Packers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png"
+      }
+    },
+    {
+      "date": "2026-10-25T20:25Z",
+      "home": {
+        "name": "Las Vegas Raiders",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png"
+      },
+      "away": {
+        "name": "Los Angeles Rams",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png"
+      }
+    },
+    {
+      "date": "2026-10-26T00:20Z",
+      "home": {
+        "name": "Seattle Seahawks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png"
+      },
+      "away": {
+        "name": "Kansas City Chiefs",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png"
+      }
+    },
+    {
+      "date": "2026-10-27T00:15Z",
+      "home": {
+        "name": "Philadelphia Eagles",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png"
+      },
+      "away": {
+        "name": "Dallas Cowboys",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png"
+      }
+    },
+    {
+      "date": "2026-10-30T00:15Z",
+      "home": {
+        "name": "Green Bay Packers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png"
+      },
+      "away": {
+        "name": "Carolina Panthers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png"
+      }
+    },
+    {
+      "date": "2026-11-01T18:00Z",
+      "home": {
+        "name": "Buffalo Bills",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png"
+      },
+      "away": {
+        "name": "Baltimore Ravens",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png"
+      }
+    },
+    {
+      "date": "2026-11-01T18:00Z",
+      "home": {
+        "name": "Cincinnati Bengals",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png"
+      },
+      "away": {
+        "name": "Tennessee Titans",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png"
+      }
+    },
+    {
+      "date": "2026-11-01T18:00Z",
+      "home": {
+        "name": "Dallas Cowboys",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png"
+      },
+      "away": {
+        "name": "Arizona Cardinals",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ari.png"
+      }
+    },
+    {
+      "date": "2026-11-01T18:00Z",
+      "home": {
+        "name": "Detroit Lions",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png"
+      },
+      "away": {
+        "name": "Minnesota Vikings",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png"
+      }
+    },
+    {
+      "date": "2026-11-01T18:00Z",
+      "home": {
+        "name": "New York Jets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png"
+      },
+      "away": {
+        "name": "Las Vegas Raiders",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png"
+      }
+    },
+    {
+      "date": "2026-11-01T18:00Z",
+      "home": {
+        "name": "Pittsburgh Steelers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png"
+      },
+      "away": {
+        "name": "Cleveland Browns",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png"
+      }
+    },
+    {
+      "date": "2026-11-01T18:00Z",
+      "home": {
+        "name": "Tampa Bay Buccaneers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png"
+      },
+      "away": {
+        "name": "Atlanta Falcons",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png"
+      }
+    },
+    {
+      "date": "2026-11-01T18:00Z",
+      "home": {
+        "name": "Jacksonville Jaguars",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png"
+      },
+      "away": {
+        "name": "Indianapolis Colts",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png"
+      }
+    },
+    {
+      "date": "2026-11-01T21:05Z",
+      "home": {
+        "name": "Los Angeles Rams",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png"
+      },
+      "away": {
+        "name": "Los Angeles Chargers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png"
+      }
+    },
+    {
+      "date": "2026-11-01T21:25Z",
+      "home": {
+        "name": "Denver Broncos",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png"
+      },
+      "away": {
+        "name": "Kansas City Chiefs",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png"
+      }
+    },
+    {
+      "date": "2026-11-01T21:25Z",
+      "home": {
+        "name": "Miami Dolphins",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png"
+      },
+      "away": {
+        "name": "New England Patriots",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png"
+      }
+    },
+    {
+      "date": "2026-11-02T01:20Z",
+      "home": {
+        "name": "Washington Commanders",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png"
+      },
+      "away": {
+        "name": "Philadelphia Eagles",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png"
+      }
+    },
+    {
+      "date": "2026-11-03T01:15Z",
+      "home": {
+        "name": "Seattle Seahawks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png"
+      },
+      "away": {
+        "name": "Chicago Bears",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png"
+      }
+    },
+    {
+      "date": "2026-11-06T01:15Z",
+      "home": {
+        "name": "Baltimore Ravens",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png"
+      },
+      "away": {
+        "name": "Jacksonville Jaguars",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png"
+      }
+    },
+    {
+      "date": "2026-11-08T14:30Z",
+      "home": {
+        "name": "Atlanta Falcons",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png"
+      },
+      "away": {
+        "name": "Cincinnati Bengals",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png"
+      }
+    },
+    {
+      "date": "2026-11-08T18:00Z",
+      "home": {
+        "name": "Indianapolis Colts",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png"
+      },
+      "away": {
+        "name": "Dallas Cowboys",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png"
+      }
+    },
+    {
+      "date": "2026-11-08T18:00Z",
+      "home": {
+        "name": "Kansas City Chiefs",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png"
+      },
+      "away": {
+        "name": "New York Jets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png"
+      }
+    },
+    {
+      "date": "2026-11-08T18:00Z",
+      "home": {
+        "name": "Miami Dolphins",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png"
+      },
+      "away": {
+        "name": "Detroit Lions",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png"
+      }
+    },
+    {
+      "date": "2026-11-08T18:00Z",
+      "home": {
+        "name": "New Orleans Saints",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png"
+      },
+      "away": {
+        "name": "Cleveland Browns",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png"
+      }
+    },
+    {
+      "date": "2026-11-08T18:00Z",
+      "home": {
+        "name": "Philadelphia Eagles",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png"
+      },
+      "away": {
+        "name": "New York Giants",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png"
+      }
+    },
+    {
+      "date": "2026-11-08T18:00Z",
+      "home": {
+        "name": "Washington Commanders",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png"
+      },
+      "away": {
+        "name": "Los Angeles Rams",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png"
+      }
+    },
+    {
+      "date": "2026-11-08T18:00Z",
+      "home": {
+        "name": "Carolina Panthers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png"
+      },
+      "away": {
+        "name": "Denver Broncos",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png"
+      }
+    },
+    {
+      "date": "2026-11-08T21:05Z",
+      "home": {
+        "name": "Los Angeles Chargers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png"
+      },
+      "away": {
+        "name": "Houston Texans",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png"
+      }
+    },
+    {
+      "date": "2026-11-08T21:05Z",
+      "home": {
+        "name": "San Francisco 49ers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png"
+      },
+      "away": {
+        "name": "Las Vegas Raiders",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png"
+      }
+    },
+    {
+      "date": "2026-11-08T21:25Z",
+      "home": {
+        "name": "New England Patriots",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png"
+      },
+      "away": {
+        "name": "Green Bay Packers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png"
+      }
+    },
+    {
+      "date": "2026-11-08T21:25Z",
+      "home": {
+        "name": "Seattle Seahawks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png"
+      },
+      "away": {
+        "name": "Arizona Cardinals",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ari.png"
+      }
+    },
+    {
+      "date": "2026-11-09T01:20Z",
+      "home": {
+        "name": "Chicago Bears",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png"
+      },
+      "away": {
+        "name": "Tampa Bay Buccaneers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png"
+      }
+    },
+    {
+      "date": "2026-11-10T01:15Z",
+      "home": {
+        "name": "Minnesota Vikings",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png"
+      },
+      "away": {
+        "name": "Buffalo Bills",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png"
+      }
+    },
+    {
+      "date": "2026-11-13T01:15Z",
+      "home": {
+        "name": "New York Giants",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png"
+      },
+      "away": {
+        "name": "Washington Commanders",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png"
+      }
+    },
+    {
+      "date": "2026-11-15T14:30Z",
+      "home": {
+        "name": "Detroit Lions",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png"
+      },
+      "away": {
+        "name": "New England Patriots",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png"
+      }
+    },
+    {
+      "date": "2026-11-15T18:00Z",
+      "home": {
+        "name": "Atlanta Falcons",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png"
+      },
+      "away": {
+        "name": "Kansas City Chiefs",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png"
+      }
+    },
+    {
+      "date": "2026-11-15T18:00Z",
+      "home": {
+        "name": "Cleveland Browns",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png"
+      },
+      "away": {
+        "name": "Houston Texans",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png"
+      }
+    },
+    {
+      "date": "2026-11-15T18:00Z",
+      "home": {
+        "name": "Green Bay Packers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png"
+      },
+      "away": {
+        "name": "Minnesota Vikings",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png"
+      }
+    },
+    {
+      "date": "2026-11-15T18:00Z",
+      "home": {
+        "name": "Tennessee Titans",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png"
+      },
+      "away": {
+        "name": "Jacksonville Jaguars",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png"
+      }
+    },
+    {
+      "date": "2026-11-15T18:00Z",
+      "home": {
+        "name": "Indianapolis Colts",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png"
+      },
+      "away": {
+        "name": "Miami Dolphins",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png"
+      }
+    },
+    {
+      "date": "2026-11-15T18:00Z",
+      "home": {
+        "name": "New Orleans Saints",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png"
+      },
+      "away": {
+        "name": "Carolina Panthers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png"
+      }
+    },
+    {
+      "date": "2026-11-15T18:00Z",
+      "home": {
+        "name": "New York Jets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png"
+      },
+      "away": {
+        "name": "Buffalo Bills",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png"
+      }
+    },
+    {
+      "date": "2026-11-15T21:05Z",
+      "home": {
+        "name": "Las Vegas Raiders",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png"
+      },
+      "away": {
+        "name": "Seattle Seahawks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png"
+      }
+    },
+    {
+      "date": "2026-11-15T21:05Z",
+      "home": {
+        "name": "Arizona Cardinals",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ari.png"
+      },
+      "away": {
+        "name": "Los Angeles Rams",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png"
+      }
+    },
+    {
+      "date": "2026-11-15T21:25Z",
+      "home": {
+        "name": "Dallas Cowboys",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png"
+      },
+      "away": {
+        "name": "San Francisco 49ers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png"
+      }
+    },
+    {
+      "date": "2026-11-16T01:20Z",
+      "home": {
+        "name": "Cincinnati Bengals",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png"
+      },
+      "away": {
+        "name": "Pittsburgh Steelers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png"
+      }
+    },
+    {
+      "date": "2026-11-17T01:15Z",
+      "home": {
+        "name": "Baltimore Ravens",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png"
+      },
+      "away": {
+        "name": "Los Angeles Chargers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png"
+      }
+    },
+    {
+      "date": "2026-11-20T01:15Z",
+      "home": {
+        "name": "Houston Texans",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png"
+      },
+      "away": {
+        "name": "Indianapolis Colts",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png"
+      }
+    },
+    {
+      "date": "2026-11-22T18:00Z",
+      "home": {
+        "name": "Buffalo Bills",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png"
+      },
+      "away": {
+        "name": "Miami Dolphins",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png"
+      }
+    },
+    {
+      "date": "2026-11-22T18:00Z",
+      "home": {
+        "name": "Chicago Bears",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png"
+      },
+      "away": {
+        "name": "New Orleans Saints",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png"
+      }
+    },
+    {
+      "date": "2026-11-22T18:00Z",
+      "home": {
+        "name": "Dallas Cowboys",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png"
+      },
+      "away": {
+        "name": "Tennessee Titans",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png"
+      }
+    },
+    {
+      "date": "2026-11-22T18:00Z",
+      "home": {
+        "name": "Detroit Lions",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png"
+      },
+      "away": {
+        "name": "Tampa Bay Buccaneers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png"
+      }
+    },
+    {
+      "date": "2026-11-22T18:00Z",
+      "home": {
+        "name": "Kansas City Chiefs",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png"
+      },
+      "away": {
+        "name": "Arizona Cardinals",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ari.png"
+      }
+    },
+    {
+      "date": "2026-11-22T18:00Z",
+      "home": {
+        "name": "New York Giants",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png"
+      },
+      "away": {
+        "name": "Jacksonville Jaguars",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png"
+      }
+    },
+    {
+      "date": "2026-11-22T18:00Z",
+      "home": {
+        "name": "Carolina Panthers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png"
+      },
+      "away": {
+        "name": "Baltimore Ravens",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png"
+      }
+    },
+    {
+      "date": "2026-11-22T21:05Z",
+      "home": {
+        "name": "Los Angeles Chargers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png"
+      },
+      "away": {
+        "name": "New York Jets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png"
+      }
+    },
+    {
+      "date": "2026-11-22T21:25Z",
+      "home": {
+        "name": "Denver Broncos",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png"
+      },
+      "away": {
+        "name": "Las Vegas Raiders",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png"
+      }
+    },
+    {
+      "date": "2026-11-22T21:25Z",
+      "home": {
+        "name": "Philadelphia Eagles",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png"
+      },
+      "away": {
+        "name": "Pittsburgh Steelers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png"
+      }
+    },
+    {
+      "date": "2026-11-23T01:20Z",
+      "home": {
+        "name": "San Francisco 49ers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png"
+      },
+      "away": {
+        "name": "Minnesota Vikings",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png"
+      }
+    },
+    {
+      "date": "2026-11-24T01:15Z",
+      "home": {
+        "name": "Washington Commanders",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png"
+      },
+      "away": {
+        "name": "Cincinnati Bengals",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png"
+      }
+    },
+    {
+      "date": "2026-11-26T01:00Z",
+      "home": {
+        "name": "Los Angeles Rams",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png"
+      },
+      "away": {
+        "name": "Green Bay Packers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png"
+      }
+    },
+    {
+      "date": "2026-11-26T18:00Z",
+      "home": {
+        "name": "Detroit Lions",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png"
+      },
+      "away": {
+        "name": "Chicago Bears",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png"
+      }
+    },
+    {
+      "date": "2026-11-26T21:30Z",
+      "home": {
+        "name": "Dallas Cowboys",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png"
+      },
+      "away": {
+        "name": "Philadelphia Eagles",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png"
+      }
+    },
+    {
+      "date": "2026-11-27T01:20Z",
+      "home": {
+        "name": "Buffalo Bills",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png"
+      },
+      "away": {
+        "name": "Kansas City Chiefs",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png"
+      }
+    },
+    {
+      "date": "2026-11-27T20:00Z",
+      "home": {
+        "name": "Pittsburgh Steelers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png"
+      },
+      "away": {
+        "name": "Denver Broncos",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png"
+      }
+    },
+    {
+      "date": "2026-11-29T18:00Z",
+      "home": {
+        "name": "Cincinnati Bengals",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png"
+      },
+      "away": {
+        "name": "New Orleans Saints",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png"
+      }
+    },
+    {
+      "date": "2026-11-29T18:00Z",
+      "home": {
+        "name": "Cleveland Browns",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png"
+      },
+      "away": {
+        "name": "Las Vegas Raiders",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png"
+      }
+    },
+    {
+      "date": "2026-11-29T18:00Z",
+      "home": {
+        "name": "Indianapolis Colts",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png"
+      },
+      "away": {
+        "name": "New York Giants",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png"
+      }
+    },
+    {
+      "date": "2026-11-29T18:00Z",
+      "home": {
+        "name": "Miami Dolphins",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png"
+      },
+      "away": {
+        "name": "New York Jets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png"
+      }
+    },
+    {
+      "date": "2026-11-29T18:00Z",
+      "home": {
+        "name": "Minnesota Vikings",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png"
+      },
+      "away": {
+        "name": "Atlanta Falcons",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png"
+      }
+    },
+    {
+      "date": "2026-11-29T18:00Z",
+      "home": {
+        "name": "Houston Texans",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png"
+      },
+      "away": {
+        "name": "Baltimore Ravens",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png"
+      }
+    },
+    {
+      "date": "2026-11-29T21:05Z",
+      "home": {
+        "name": "Jacksonville Jaguars",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png"
+      },
+      "away": {
+        "name": "Tennessee Titans",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png"
+      }
+    },
+    {
+      "date": "2026-11-29T21:25Z",
+      "home": {
+        "name": "Arizona Cardinals",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ari.png"
+      },
+      "away": {
+        "name": "Washington Commanders",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png"
+      }
+    },
+    {
+      "date": "2026-11-29T21:25Z",
+      "home": {
+        "name": "San Francisco 49ers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png"
+      },
+      "away": {
+        "name": "Seattle Seahawks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png"
+      }
+    },
+    {
+      "date": "2026-11-30T01:20Z",
+      "home": {
+        "name": "Los Angeles Chargers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png"
+      },
+      "away": {
+        "name": "New England Patriots",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png"
+      }
+    },
+    {
+      "date": "2026-12-01T01:15Z",
+      "home": {
+        "name": "Tampa Bay Buccaneers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png"
+      },
+      "away": {
+        "name": "Carolina Panthers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png"
+      }
+    },
+    {
+      "date": "2026-12-04T01:15Z",
+      "home": {
+        "name": "Los Angeles Rams",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png"
+      },
+      "away": {
+        "name": "Kansas City Chiefs",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png"
+      }
+    },
+    {
+      "date": "2026-12-06T18:00Z",
+      "home": {
+        "name": "Atlanta Falcons",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png"
+      },
+      "away": {
+        "name": "Detroit Lions",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png"
+      }
+    },
+    {
+      "date": "2026-12-06T18:00Z",
+      "home": {
+        "name": "Chicago Bears",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png"
+      },
+      "away": {
+        "name": "Jacksonville Jaguars",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png"
+      }
+    },
+    {
+      "date": "2026-12-06T18:00Z",
+      "home": {
+        "name": "Cleveland Browns",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png"
+      },
+      "away": {
+        "name": "Cincinnati Bengals",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png"
+      }
+    },
+    {
+      "date": "2026-12-06T18:00Z",
+      "home": {
+        "name": "Tennessee Titans",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png"
+      },
+      "away": {
+        "name": "Washington Commanders",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png"
+      }
+    },
+    {
+      "date": "2026-12-06T18:00Z",
+      "home": {
+        "name": "New Orleans Saints",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png"
+      },
+      "away": {
+        "name": "Green Bay Packers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png"
+      }
+    },
+    {
+      "date": "2026-12-06T18:00Z",
+      "home": {
+        "name": "New York Giants",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png"
+      },
+      "away": {
+        "name": "San Francisco 49ers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png"
+      }
+    },
+    {
+      "date": "2026-12-06T18:00Z",
+      "home": {
+        "name": "Tampa Bay Buccaneers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png"
+      },
+      "away": {
+        "name": "Los Angeles Chargers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png"
+      }
+    },
+    {
+      "date": "2026-12-06T21:05Z",
+      "home": {
+        "name": "Denver Broncos",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png"
+      },
+      "away": {
+        "name": "Miami Dolphins",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png"
+      }
+    },
+    {
+      "date": "2026-12-06T21:05Z",
+      "home": {
+        "name": "Arizona Cardinals",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ari.png"
+      },
+      "away": {
+        "name": "Philadelphia Eagles",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png"
+      }
+    },
+    {
+      "date": "2026-12-06T21:25Z",
+      "home": {
+        "name": "Minnesota Vikings",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png"
+      },
+      "away": {
+        "name": "Carolina Panthers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png"
+      }
+    },
+    {
+      "date": "2026-12-06T21:25Z",
+      "home": {
+        "name": "New England Patriots",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png"
+      },
+      "away": {
+        "name": "Buffalo Bills",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png"
+      }
+    },
+    {
+      "date": "2026-12-07T01:20Z",
+      "home": {
+        "name": "Pittsburgh Steelers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png"
+      },
+      "away": {
+        "name": "Houston Texans",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png"
+      }
+    },
+    {
+      "date": "2026-12-08T01:15Z",
+      "home": {
+        "name": "Seattle Seahawks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png"
+      },
+      "away": {
+        "name": "Dallas Cowboys",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png"
+      }
+    },
+    {
+      "date": "2026-12-11T01:15Z",
+      "home": {
+        "name": "New England Patriots",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png"
+      },
+      "away": {
+        "name": "Minnesota Vikings",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png"
+      }
+    },
+    {
+      "date": "2026-12-13T18:00Z",
+      "home": {
+        "name": "Cleveland Browns",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png"
+      },
+      "away": {
+        "name": "Atlanta Falcons",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png"
+      }
+    },
+    {
+      "date": "2026-12-13T18:00Z",
+      "home": {
+        "name": "Detroit Lions",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png"
+      },
+      "away": {
+        "name": "Tennessee Titans",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png"
+      }
+    },
+    {
+      "date": "2026-12-13T18:00Z",
+      "home": {
+        "name": "Miami Dolphins",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png"
+      },
+      "away": {
+        "name": "Chicago Bears",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png"
+      }
+    },
+    {
+      "date": "2026-12-13T18:00Z",
+      "home": {
+        "name": "New York Jets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png"
+      },
+      "away": {
+        "name": "Denver Broncos",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png"
+      }
+    },
+    {
+      "date": "2026-12-13T18:00Z",
+      "home": {
+        "name": "Philadelphia Eagles",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png"
+      },
+      "away": {
+        "name": "Indianapolis Colts",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png"
+      }
+    },
+    {
+      "date": "2026-12-13T18:00Z",
+      "home": {
+        "name": "Washington Commanders",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png"
+      },
+      "away": {
+        "name": "Houston Texans",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png"
+      }
+    },
+    {
+      "date": "2026-12-13T18:00Z",
+      "home": {
+        "name": "Carolina Panthers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png"
+      },
+      "away": {
+        "name": "New Orleans Saints",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png"
+      }
+    },
+    {
+      "date": "2026-12-13T18:00Z",
+      "home": {
+        "name": "Baltimore Ravens",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png"
+      },
+      "away": {
+        "name": "Tampa Bay Buccaneers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png"
+      }
+    },
+    {
+      "date": "2026-12-13T21:05Z",
+      "home": {
+        "name": "Las Vegas Raiders",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png"
+      },
+      "away": {
+        "name": "Los Angeles Chargers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png"
+      }
+    },
+    {
+      "date": "2026-12-13T21:25Z",
+      "home": {
+        "name": "Cincinnati Bengals",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png"
+      },
+      "away": {
+        "name": "Kansas City Chiefs",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png"
+      }
+    },
+    {
+      "date": "2026-12-13T21:25Z",
+      "home": {
+        "name": "San Francisco 49ers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png"
+      },
+      "away": {
+        "name": "Los Angeles Rams",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png"
+      }
+    },
+    {
+      "date": "2026-12-13T21:25Z",
+      "home": {
+        "name": "Seattle Seahawks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png"
+      },
+      "away": {
+        "name": "New York Giants",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png"
+      }
+    },
+    {
+      "date": "2026-12-14T01:20Z",
+      "home": {
+        "name": "Green Bay Packers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png"
+      },
+      "away": {
+        "name": "Buffalo Bills",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png"
+      }
+    },
+    {
+      "date": "2026-12-15T01:15Z",
+      "home": {
+        "name": "Jacksonville Jaguars",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png"
+      },
+      "away": {
+        "name": "Pittsburgh Steelers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png"
+      }
+    },
+    {
+      "date": "2026-12-18T01:15Z",
+      "home": {
+        "name": "Los Angeles Chargers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png"
+      },
+      "away": {
+        "name": "San Francisco 49ers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png"
+      }
+    },
+    {
+      "date": "2026-12-19T22:00Z",
+      "home": {
+        "name": "Philadelphia Eagles",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png"
+      },
+      "away": {
+        "name": "Seattle Seahawks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png"
+      }
+    },
+    {
+      "date": "2026-12-20T01:20Z",
+      "home": {
+        "name": "Buffalo Bills",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png"
+      },
+      "away": {
+        "name": "Chicago Bears",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png"
+      }
+    },
+    {
+      "date": "2026-12-20T18:00Z",
+      "home": {
+        "name": "Green Bay Packers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png"
+      },
+      "away": {
+        "name": "Miami Dolphins",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png"
+      }
+    },
+    {
+      "date": "2026-12-20T18:00Z",
+      "home": {
+        "name": "Tennessee Titans",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png"
+      },
+      "away": {
+        "name": "Indianapolis Colts",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png"
+      }
+    },
+    {
+      "date": "2026-12-20T18:00Z",
+      "home": {
+        "name": "New York Giants",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png"
+      },
+      "away": {
+        "name": "Cleveland Browns",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png"
+      }
+    },
+    {
+      "date": "2026-12-20T18:00Z",
+      "home": {
+        "name": "Pittsburgh Steelers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png"
+      },
+      "away": {
+        "name": "Baltimore Ravens",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png"
+      }
+    },
+    {
+      "date": "2026-12-20T18:00Z",
+      "home": {
+        "name": "Tampa Bay Buccaneers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png"
+      },
+      "away": {
+        "name": "New Orleans Saints",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png"
+      }
+    },
+    {
+      "date": "2026-12-20T18:00Z",
+      "home": {
+        "name": "Washington Commanders",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png"
+      },
+      "away": {
+        "name": "Atlanta Falcons",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png"
+      }
+    },
+    {
+      "date": "2026-12-20T18:00Z",
+      "home": {
+        "name": "Carolina Panthers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png"
+      },
+      "away": {
+        "name": "Cincinnati Bengals",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png"
+      }
+    },
+    {
+      "date": "2026-12-20T18:00Z",
+      "home": {
+        "name": "Houston Texans",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png"
+      },
+      "away": {
+        "name": "Jacksonville Jaguars",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png"
+      }
+    },
+    {
+      "date": "2026-12-20T21:05Z",
+      "home": {
+        "name": "Arizona Cardinals",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ari.png"
+      },
+      "away": {
+        "name": "New York Jets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png"
+      }
+    },
+    {
+      "date": "2026-12-20T21:25Z",
+      "home": {
+        "name": "Las Vegas Raiders",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png"
+      },
+      "away": {
+        "name": "Denver Broncos",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png"
+      }
+    },
+    {
+      "date": "2026-12-20T21:25Z",
+      "home": {
+        "name": "Los Angeles Rams",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png"
+      },
+      "away": {
+        "name": "Dallas Cowboys",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png"
+      }
+    },
+    {
+      "date": "2026-12-21T01:20Z",
+      "home": {
+        "name": "Minnesota Vikings",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png"
+      },
+      "away": {
+        "name": "Detroit Lions",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png"
+      }
+    },
+    {
+      "date": "2026-12-22T01:15Z",
+      "home": {
+        "name": "Kansas City Chiefs",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png"
+      },
+      "away": {
+        "name": "New England Patriots",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png"
+      }
+    },
+    {
+      "date": "2026-12-25T01:15Z",
+      "home": {
+        "name": "Philadelphia Eagles",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png"
+      },
+      "away": {
+        "name": "Houston Texans",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png"
+      }
+    },
+    {
+      "date": "2026-12-25T18:00Z",
+      "home": {
+        "name": "Chicago Bears",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png"
+      },
+      "away": {
+        "name": "Green Bay Packers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png"
+      }
+    },
+    {
+      "date": "2026-12-25T21:30Z",
+      "home": {
+        "name": "Denver Broncos",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png"
+      },
+      "away": {
+        "name": "Buffalo Bills",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png"
+      }
+    },
+    {
+      "date": "2026-12-26T01:15Z",
+      "home": {
+        "name": "Seattle Seahawks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png"
+      },
+      "away": {
+        "name": "Los Angeles Rams",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png"
+      }
+    },
+    {
+      "date": "2026-12-27T05:00Z",
+      "home": {
+        "name": "Atlanta Falcons",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png"
+      },
+      "away": {
+        "name": "Tampa Bay Buccaneers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png"
+      }
+    },
+    {
+      "date": "2026-12-27T05:00Z",
+      "home": {
+        "name": "Indianapolis Colts",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png"
+      },
+      "away": {
+        "name": "Cincinnati Bengals",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png"
+      }
+    },
+    {
+      "date": "2026-12-27T05:00Z",
+      "home": {
+        "name": "Minnesota Vikings",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png"
+      },
+      "away": {
+        "name": "Washington Commanders",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png"
+      }
+    },
+    {
+      "date": "2026-12-27T05:00Z",
+      "home": {
+        "name": "Pittsburgh Steelers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png"
+      },
+      "away": {
+        "name": "Carolina Panthers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png"
+      }
+    },
+    {
+      "date": "2026-12-27T18:00Z",
+      "home": {
+        "name": "Miami Dolphins",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png"
+      },
+      "away": {
+        "name": "Los Angeles Chargers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png"
+      }
+    },
+    {
+      "date": "2026-12-27T18:00Z",
+      "home": {
+        "name": "New Orleans Saints",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png"
+      },
+      "away": {
+        "name": "Arizona Cardinals",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ari.png"
+      }
+    },
+    {
+      "date": "2026-12-27T18:00Z",
+      "home": {
+        "name": "New York Jets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png"
+      },
+      "away": {
+        "name": "New England Patriots",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png"
+      }
+    },
+    {
+      "date": "2026-12-27T18:00Z",
+      "home": {
+        "name": "Baltimore Ravens",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png"
+      },
+      "away": {
+        "name": "Cleveland Browns",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png"
+      }
+    },
+    {
+      "date": "2026-12-27T21:05Z",
+      "home": {
+        "name": "Las Vegas Raiders",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png"
+      },
+      "away": {
+        "name": "Tennessee Titans",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png"
+      }
+    },
+    {
+      "date": "2026-12-27T21:25Z",
+      "home": {
+        "name": "Kansas City Chiefs",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png"
+      },
+      "away": {
+        "name": "San Francisco 49ers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png"
+      }
+    },
+    {
+      "date": "2026-12-28T01:20Z",
+      "home": {
+        "name": "Dallas Cowboys",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png"
+      },
+      "away": {
+        "name": "Jacksonville Jaguars",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png"
+      }
+    },
+    {
+      "date": "2026-12-29T01:15Z",
+      "home": {
+        "name": "Detroit Lions",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png"
+      },
+      "away": {
+        "name": "New York Giants",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png"
+      }
+    },
+    {
+      "date": "2027-01-01T01:15Z",
+      "home": {
+        "name": "Cincinnati Bengals",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png"
+      },
+      "away": {
+        "name": "Baltimore Ravens",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png"
+      }
+    },
+    {
+      "date": "2027-01-03T05:00Z",
+      "home": {
+        "name": "New England Patriots",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png"
+      },
+      "away": {
+        "name": "Denver Broncos",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png"
+      }
+    },
+    {
+      "date": "2027-01-03T05:00Z",
+      "home": {
+        "name": "Los Angeles Chargers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png"
+      },
+      "away": {
+        "name": "Kansas City Chiefs",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png"
+      }
+    },
+    {
+      "date": "2027-01-03T05:00Z",
+      "home": {
+        "name": "Tampa Bay Buccaneers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png"
+      },
+      "away": {
+        "name": "Los Angeles Rams",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png"
+      }
+    },
+    {
+      "date": "2027-01-03T05:00Z",
+      "home": {
+        "name": "Jacksonville Jaguars",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png"
+      },
+      "away": {
+        "name": "Washington Commanders",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png"
+      }
+    },
+    {
+      "date": "2027-01-03T18:00Z",
+      "home": {
+        "name": "Atlanta Falcons",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png"
+      },
+      "away": {
+        "name": "New Orleans Saints",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png"
+      }
+    },
+    {
+      "date": "2027-01-03T18:00Z",
+      "home": {
+        "name": "Cleveland Browns",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png"
+      },
+      "away": {
+        "name": "Indianapolis Colts",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png"
+      }
+    },
+    {
+      "date": "2027-01-03T18:00Z",
+      "home": {
+        "name": "Dallas Cowboys",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png"
+      },
+      "away": {
+        "name": "New York Giants",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png"
+      }
+    },
+    {
+      "date": "2027-01-03T18:00Z",
+      "home": {
+        "name": "Tennessee Titans",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png"
+      },
+      "away": {
+        "name": "Pittsburgh Steelers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png"
+      }
+    },
+    {
+      "date": "2027-01-03T18:00Z",
+      "home": {
+        "name": "Miami Dolphins",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png"
+      },
+      "away": {
+        "name": "Buffalo Bills",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png"
+      }
+    },
+    {
+      "date": "2027-01-03T18:00Z",
+      "home": {
+        "name": "New York Jets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png"
+      },
+      "away": {
+        "name": "Minnesota Vikings",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png"
+      }
+    },
+    {
+      "date": "2027-01-03T18:00Z",
+      "home": {
+        "name": "Carolina Panthers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png"
+      },
+      "away": {
+        "name": "Seattle Seahawks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png"
+      }
+    },
+    {
+      "date": "2027-01-03T21:05Z",
+      "home": {
+        "name": "Arizona Cardinals",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ari.png"
+      },
+      "away": {
+        "name": "Las Vegas Raiders",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png"
+      }
+    },
+    {
+      "date": "2027-01-03T21:25Z",
+      "home": {
+        "name": "Chicago Bears",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png"
+      },
+      "away": {
+        "name": "Detroit Lions",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png"
+      }
+    },
+    {
+      "date": "2027-01-04T01:20Z",
+      "home": {
+        "name": "San Francisco 49ers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png"
+      },
+      "away": {
+        "name": "Philadelphia Eagles",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png"
+      }
+    },
+    {
+      "date": "2027-01-05T01:15Z",
+      "home": {
+        "name": "Green Bay Packers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png"
+      },
+      "away": {
+        "name": "Houston Texans",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png"
+      }
+    },
+    {
+      "date": "2027-01-10T05:00Z",
+      "home": {
+        "name": "Buffalo Bills",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png"
+      },
+      "away": {
+        "name": "New York Jets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png"
+      }
+    },
+    {
+      "date": "2027-01-10T05:00Z",
+      "home": {
+        "name": "Cincinnati Bengals",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png"
+      },
+      "away": {
+        "name": "Cleveland Browns",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png"
+      }
+    },
+    {
+      "date": "2027-01-10T05:00Z",
+      "home": {
+        "name": "Denver Broncos",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png"
+      },
+      "away": {
+        "name": "Los Angeles Chargers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png"
+      }
+    },
+    {
+      "date": "2027-01-10T05:00Z",
+      "home": {
+        "name": "Green Bay Packers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png"
+      },
+      "away": {
+        "name": "Detroit Lions",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png"
+      }
+    },
+    {
+      "date": "2027-01-10T05:00Z",
+      "home": {
+        "name": "Indianapolis Colts",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png"
+      },
+      "away": {
+        "name": "Jacksonville Jaguars",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png"
+      }
+    },
+    {
+      "date": "2027-01-10T05:00Z",
+      "home": {
+        "name": "Kansas City Chiefs",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png"
+      },
+      "away": {
+        "name": "Las Vegas Raiders",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png"
+      }
+    },
+    {
+      "date": "2027-01-10T05:00Z",
+      "home": {
+        "name": "Los Angeles Rams",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png"
+      },
+      "away": {
+        "name": "Seattle Seahawks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png"
+      }
+    },
+    {
+      "date": "2027-01-10T05:00Z",
+      "home": {
+        "name": "Minnesota Vikings",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png"
+      },
+      "away": {
+        "name": "Chicago Bears",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png"
+      }
+    },
+    {
+      "date": "2027-01-10T05:00Z",
+      "home": {
+        "name": "New England Patriots",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png"
+      },
+      "away": {
+        "name": "Miami Dolphins",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png"
+      }
+    },
+    {
+      "date": "2027-01-10T05:00Z",
+      "home": {
+        "name": "New Orleans Saints",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png"
+      },
+      "away": {
+        "name": "Tampa Bay Buccaneers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png"
+      }
+    },
+    {
+      "date": "2027-01-10T05:00Z",
+      "home": {
+        "name": "New York Giants",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png"
+      },
+      "away": {
+        "name": "Philadelphia Eagles",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png"
+      }
+    },
+    {
+      "date": "2027-01-10T05:00Z",
+      "home": {
+        "name": "Arizona Cardinals",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ari.png"
+      },
+      "away": {
+        "name": "San Francisco 49ers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png"
+      }
+    },
+    {
+      "date": "2027-01-10T05:00Z",
+      "home": {
+        "name": "Washington Commanders",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png"
+      },
+      "away": {
+        "name": "Dallas Cowboys",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png"
+      }
+    },
+    {
+      "date": "2027-01-10T05:00Z",
+      "home": {
+        "name": "Carolina Panthers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png"
+      },
+      "away": {
+        "name": "Atlanta Falcons",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png"
+      }
+    },
+    {
+      "date": "2027-01-10T05:00Z",
+      "home": {
+        "name": "Baltimore Ravens",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png"
+      },
+      "away": {
+        "name": "Pittsburgh Steelers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png"
+      }
+    },
+    {
+      "date": "2027-01-10T05:00Z",
+      "home": {
+        "name": "Houston Texans",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png"
+      },
+      "away": {
+        "name": "Tennessee Titans",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png"
+      }
+    },
+    {
+      "date": "2027-01-16T05:00Z",
+      "home": {
+        "name": "TBD",
+        "logo": ""
+      },
+      "away": {
+        "name": "TBD",
+        "logo": ""
+      }
+    },
+    {
+      "date": "2027-01-16T05:00Z",
+      "home": {
+        "name": "TBD",
+        "logo": ""
+      },
+      "away": {
+        "name": "TBD",
+        "logo": ""
+      }
+    },
+    {
+      "date": "2027-01-17T05:00Z",
+      "home": {
+        "name": "TBD",
+        "logo": ""
+      },
+      "away": {
+        "name": "TBD",
+        "logo": ""
+      }
+    },
+    {
+      "date": "2027-01-17T05:00Z",
+      "home": {
+        "name": "TBD",
+        "logo": ""
+      },
+      "away": {
+        "name": "TBD",
+        "logo": ""
+      }
+    },
+    {
+      "date": "2027-01-17T05:00Z",
+      "home": {
+        "name": "TBD",
+        "logo": ""
+      },
+      "away": {
+        "name": "TBD",
+        "logo": ""
+      }
+    },
+    {
+      "date": "2027-01-18T05:00Z",
+      "home": {
+        "name": "TBD",
+        "logo": ""
+      },
+      "away": {
+        "name": "TBD",
+        "logo": ""
+      }
+    },
+    {
+      "date": "2027-01-23T05:00Z",
+      "home": {
+        "name": "TBD",
+        "logo": ""
+      },
+      "away": {
+        "name": "TBD",
+        "logo": ""
+      }
+    },
+    {
+      "date": "2027-01-23T05:00Z",
+      "home": {
+        "name": "TBD",
+        "logo": ""
+      },
+      "away": {
+        "name": "TBD",
+        "logo": ""
+      }
+    },
+    {
+      "date": "2027-01-24T05:00Z",
+      "home": {
+        "name": "TBD",
+        "logo": ""
+      },
+      "away": {
+        "name": "TBD",
+        "logo": ""
+      }
+    },
+    {
+      "date": "2027-01-24T05:00Z",
+      "home": {
+        "name": "TBD",
+        "logo": ""
+      },
+      "away": {
+        "name": "TBD",
+        "logo": ""
+      }
+    },
+    {
+      "date": "2027-01-31T05:00Z",
+      "home": {
+        "name": "TBD",
+        "logo": ""
+      },
+      "away": {
+        "name": "TBD",
+        "logo": ""
+      }
+    },
+    {
+      "date": "2027-01-31T05:00Z",
+      "home": {
+        "name": "TBD",
+        "logo": ""
+      },
+      "away": {
+        "name": "TBD",
+        "logo": ""
+      }
+    },
+    {
+      "date": "2027-02-14T23:30Z",
+      "home": {
+        "name": "TBD",
+        "logo": ""
+      },
+      "away": {
+        "name": "TBD",
+        "logo": ""
+      }
+    }
+  ],
+  "updated": "2026-10-10T13:50:53.513381+00:00"
+}
