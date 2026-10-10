@@ -4,132 +4,159 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NFL Game Day Specials</title>
+<title>NFL Game Day Specials | Hook Fish & Chicken</title>
 
 <style>
-:root{
+:root {
   --brand:#2b328b;
-  --ink:#ffffff;
-  --card:#111111;
+  --card:#f5f5f5;
   --radius:16px;
 }
 
-*{box-sizing:border-box}
+* {
+  box-sizing:border-box;
+}
 
-html,body{
+html,body {
   margin:0;
   padding:0;
 }
 
-body{
-  font-family:Arial,sans-serif;
-  background:#000;
-  color:var(--ink);
+body {
+  font-family:Arial,Helvetica,sans-serif;
+  background:#ffffff;
+  color:#111111;
   text-align:center;
-  padding-bottom:90px;
+  padding-bottom:95px;
 }
 
-.shell{
+.shell {
   max-width:760px;
   margin:0 auto;
   padding:16px;
 }
 
-img{
+img {
   max-width:100%;
   height:auto;
+  display:block;
+}
+
+.logo {
+  margin:6px 0 18px;
+}
+
+.logo img {
+  width:100%;
   border-radius:12px;
 }
 
-.logo{
-  margin:6px 0 10px;
+.section {
+  margin:20px 0;
 }
 
-.section{
-  margin:16px 0;
-}
-
-.section h2{
-  margin:0 0 10px;
-  font-size:20px;
+.section h2 {
+  margin:0 0 12px;
+  font-size:22px;
   font-weight:900;
-  color:#fff;
+  color:#111111;
 }
 
-.card{
+.card {
   background:var(--card);
   border-radius:var(--radius);
   padding:10px;
   margin:12px 0;
-  box-shadow:0 6px 18px rgba(0,0,0,.4);
+  box-shadow:0 4px 16px rgba(0,0,0,.07);
   opacity:0;
   transform:translateY(8px);
   animation:fadeUp .6s ease forwards;
   animation-delay:var(--delay,0s);
 }
 
-@keyframes fadeUp{
-  to{
+.card img {
+  width:100%;
+  border-radius:12px;
+}
+
+@keyframes fadeUp {
+  to {
     opacity:1;
     transform:translateY(0);
   }
 }
 
-/* NFL Game */
-.nfl-game{
+/* NFL Next Game */
+
+.nfl-game {
   padding:20px 12px;
+  min-height:120px;
 }
 
-.nfl-matchup{
+.nfl-matchup {
   display:flex;
   justify-content:center;
   align-items:center;
-  gap:12px;
-  margin:18px 0;
+  gap:14px;
+  margin:16px 0;
 }
 
-.nfl-team{
+.nfl-team {
   width:42%;
   max-width:180px;
 }
 
-.nfl-team img{
-  width:85px;
-  height:85px;
+.nfl-team img {
+  width:80px;
+  height:80px;
   object-fit:contain;
+  margin:0 auto;
 }
 
-.nfl-team-name{
+.nfl-team-name {
   font-size:14px;
   font-weight:800;
-  margin-top:8px;
+  margin-top:10px;
 }
 
-.nfl-vs{
-  font-size:18px;
+.nfl-vs {
+  font-size:20px;
   font-weight:900;
-  color:#fff;
+  color:var(--brand);
 }
 
-.nfl-date{
+.nfl-date {
   font-size:16px;
-  font-weight:700;
+  font-weight:800;
+  margin-top:15px;
+  line-height:1.5;
+}
+
+.nfl-status {
+  display:inline-block;
   margin-top:12px;
+  padding:7px 14px;
+  background:#e8eafa;
+  border-radius:20px;
+  color:var(--brand);
+  font-size:12px;
+  font-weight:800;
 }
 
-.nfl-status{
-  font-size:13px;
-  opacity:.75;
-  margin-top:8px;
-}
-
-.nfl-error{
+.nfl-error {
   font-size:15px;
-  padding:20px;
+  line-height:1.7;
 }
 
-/* Sticky call button */
-.cta{
+.nfl-error a {
+  color:var(--brand);
+  font-weight:800;
+  text-decoration:underline;
+}
+
+/* Sticky Call Button */
+
+.cta {
   position:fixed;
   left:0;
   right:0;
@@ -138,36 +165,45 @@ img{
   padding:12px 16px;
   display:flex;
   justify-content:center;
-  background:linear-gradient(
-    transparent,
-    rgba(0,0,0,.9)
-  );
+  background:rgba(255,255,255,.96);
+  border-top:1px solid #eee;
 }
 
-.cta a{
+.cta a {
   display:block;
   width:100%;
   max-width:760px;
-  padding:14px 18px;
+  padding:16px 18px;
   border-radius:14px;
   background:var(--brand);
-  color:#fff;
+  color:#ffffff;
   font-weight:900;
   font-size:18px;
-  box-shadow:0 10px 24px rgba(43,50,139,.35);
   text-decoration:none;
+  box-shadow:0 6px 20px rgba(43,50,139,.2);
 }
 
-.cta a:hover{
-  background:#20276f;
+.cta a:hover {
+  background:#20266c;
 }
 
-@media(max-width:480px){
-  .nfl-team img{
+/* Mobile */
+
+@media(max-width:480px) {
+  .shell {
+    padding:10px;
+  }
+
+  .section h2 {
+    font-size:20px;
+  }
+
+  .nfl-team img {
     width:65px;
     height:65px;
   }
-  .nfl-team-name{
+
+  .nfl-team-name {
     font-size:12px;
   }
 }
@@ -178,30 +214,34 @@ img{
 
 <div class="shell">
 
-  <!-- Original Logo -->
+  <!-- FIRST IMAGE -->
   <div class="logo">
     <img
-      src="https://chilliswingsandrings.com/wp-content/uploads/2025/10/Untitled-1080-x-500-px-3.gif"
-      alt="Chilli's Wings & Fish"
+      src="https://chilliswingsandrings.com/wp-content/uploads/2026/10/NFL-Specials-Hook-3.gif"
+      alt="Hook Fish & Chicken NFL Specials"
     >
   </div>
 
-  <!-- Next NFL Game -->
+  <!-- NEXT NFL GAME -->
   <div class="section">
     <h2>NFL Next Game</h2>
 
     <div class="card">
-      <div class="nfl-game" id="nflNextGame"
-           aria-live="polite">
+      <div
+        class="nfl-game"
+        id="nflNextGame"
+        aria-live="polite"
+      >
         Loading next NFL game...
       </div>
     </div>
   </div>
 
-  <!-- Game Day Specials -->
+  <!-- NFL SPECIALS -->
   <div class="section">
     <h2>NFL Game Day Specials</h2>
 
+    <!-- SPECIAL 1 -->
     <div class="card" style="--delay:.05s;">
       <img
         src="https://chilliswingsandrings.com/wp-content/uploads/2026/10/NFL-Specials-Hook-2.gif"
@@ -209,6 +249,7 @@ img{
       >
     </div>
 
+    <!-- SPECIAL 2 -->
     <div class="card" style="--delay:.12s;">
       <img
         src="https://chilliswingsandrings.com/wp-content/uploads/2026/10/NFL-Specials-Hook.gif"
@@ -216,105 +257,203 @@ img{
       >
     </div>
 
+    <!-- SPECIAL 3 -->
     <div class="card" style="--delay:.19s;">
       <img
         src="https://chilliswingsandrings.com/wp-content/uploads/2026/10/NFL-Specials-Hook-1.gif"
         alt="NFL Game Day Special 3"
       >
     </div>
+
   </div>
 
 </div>
 
-<!-- Sticky Call Button -->
+<!-- CALL BUTTON -->
 <div class="cta">
   <a href="tel:+15139780829">
-    Call Now
+    Call Now - (513) 978-0829
   </a>
 </div>
 
 <script>
-const nflContainer = document.getElementById(
-  "nflNextGame"
-);
 
-function dateKey(date){
-  const year = date.getUTCFullYear();
-  const month = String(
-    date.getUTCMonth() + 1
-  ).padStart(2,"0");
-  const day = String(
-    date.getUTCDate()
-  ).padStart(2,"0");
+const nflContainer =
+  document.getElementById("nflNextGame");
 
-  return `${year}${month}${day}`;
+// Format date for ESPN API
+function dateKey(date) {
+  return [
+    date.getUTCFullYear(),
+    String(date.getUTCMonth()+1).padStart(2,"0"),
+    String(date.getUTCDate()).padStart(2,"0")
+  ].join("");
 }
 
-async function loadNextNFLGame(){
-  try{
+// Fetch JSON with timeout
+async function fetchWithTimeout(url) {
+  const controller = new AbortController();
+
+  const timeout = setTimeout(
+    () => controller.abort(),
+    10000
+  );
+
+  try {
+    const response = await fetch(url, {
+      signal:controller.signal,
+      cache:"no-store"
+    });
+
+    if (!response.ok) {
+      throw new Error("HTTP " + response.status);
+    }
+
+    return await response.json();
+
+  } finally {
+    clearTimeout(timeout);
+  }
+}
+
+// Try ESPN endpoints
+async function getNFLData(dates) {
+
+  const hosts = [
+    "https://site.api.espn.com",
+    "https://site.web.api.espn.com"
+  ];
+
+  for (const host of hosts) {
+    try {
+
+      const url =
+        host +
+        "/apis/site/v2/sports/football/nfl/scoreboard" +
+        "?dates=" + dates +
+        "&limit=200";
+
+      const data = await fetchWithTimeout(url);
+
+      if (Array.isArray(data.events)) {
+        return data;
+      }
+
+    } catch (error) {
+      console.warn("NFL endpoint failed:",error);
+    }
+  }
+
+  throw new Error("NFL schedule unavailable");
+}
+
+// Create a team display
+function createTeam(competitor) {
+
+  const wrapper = document.createElement("div");
+  wrapper.className = "nfl-team";
+
+  const team = competitor.team || {};
+
+  if (team.logo) {
+    const logo = document.createElement("img");
+    logo.src = team.logo;
+    logo.alt = team.displayName || "NFL Team";
+    wrapper.appendChild(logo);
+  }
+
+  const name = document.createElement("div");
+  name.className = "nfl-team-name";
+  name.textContent = team.displayName || "TBD";
+
+  wrapper.appendChild(name);
+
+  return wrapper;
+}
+
+// Fallback if ESPN is unavailable
+function showNFLError() {
+
+  nflContainer.replaceChildren();
+
+  const message = document.createElement("div");
+  message.className = "nfl-error";
+  message.textContent =
+    "Unable to load the live NFL schedule. ";
+
+  const link = document.createElement("a");
+  link.href = "https://www.espn.com/nfl/schedule";
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+  link.textContent = "View NFL Schedule";
+
+  message.appendChild(link);
+  nflContainer.appendChild(message);
+}
+
+// Load the next scheduled NFL game
+async function loadNextNFLGame() {
+
+  try {
+
     const now = new Date();
 
-    // Search the next 30 days for NFL games.
+    // Search the next 14 days
     const end = new Date(
-      now.getTime() + 30*24*60*60*1000
+      now.getTime() + 14*24*60*60*1000
     );
 
     const dates =
-      `${dateKey(now)}-${dateKey(end)}`;
+      dateKey(now) + "-" + dateKey(end);
 
-    const url =
-      "https://site.api.espn.com/apis/site/v2/" +
-      "sports/football/nfl/scoreboard" +
-      `?dates=${dates}&limit=200`;
-
-    const response = await fetch(url);
-
-    if(!response.ok){
-      throw new Error("NFL data unavailable");
-    }
-
-    const data = await response.json();
+    const data = await getNFLData(dates);
 
     const games = (data.events || [])
       .filter(game => {
-        const date = new Date(game.date);
+
+        const gameDate = new Date(game.date);
+
+        const competitors =
+          game.competitions?.[0]?.competitors;
+
         return (
-          !isNaN(date.getTime()) &&
-          date.getTime() > now.getTime() &&
-          game.competitions?.[0]?.competitors?.length >= 2
+          gameDate > now &&
+          Array.isArray(competitors) &&
+          competitors.length >= 2
         );
+
       })
       .sort(
         (a,b) =>
           new Date(a.date) - new Date(b.date)
       );
 
-    if(!games.length){
+    if (!games.length) {
       nflContainer.textContent =
-        "No upcoming NFL games are scheduled.";
+        "No upcoming NFL games scheduled.";
       return;
     }
 
     const game = games[0];
-    const competition = game.competitions[0];
+    const competitors =
+      game.competitions[0].competitors;
 
-    const home = competition.competitors.find(
-      team => team.homeAway === "home"
+    const home = competitors.find(
+      t => t.homeAway === "home"
     );
 
-    const away = competition.competitors.find(
-      team => team.homeAway === "away"
+    const away = competitors.find(
+      t => t.homeAway === "away"
     );
 
-    if(!home || !away){
-      throw new Error("Team data unavailable");
+    if (!home || !away) {
+      throw new Error("Missing team data");
     }
 
     const gameDate = new Date(game.date);
 
-    // Display in Eastern Time.
     const formattedDate =
-      new Intl.DateTimeFormat("en-US",{
+      new Intl.DateTimeFormat("en-US", {
         timeZone:"America/New_York",
         weekday:"long",
         month:"long",
@@ -324,28 +463,10 @@ async function loadNextNFLGame(){
         timeZoneName:"short"
       }).format(gameDate);
 
-    // Build the card safely.
     nflContainer.replaceChildren();
 
     const matchup = document.createElement("div");
     matchup.className = "nfl-matchup";
-
-    function createTeam(competitor){
-      const wrapper = document.createElement("div");
-      wrapper.className = "nfl-team";
-
-      const logo = document.createElement("img");
-      logo.src = competitor.team.logo || "";
-      logo.alt = competitor.team.displayName || "NFL Team";
-
-      const name = document.createElement("div");
-      name.className = "nfl-team-name";
-      name.textContent =
-        competitor.team.displayName || "TBD";
-
-      wrapper.append(logo,name);
-      return wrapper;
-    }
 
     const vs = document.createElement("div");
     vs.className = "nfl-vs";
@@ -357,32 +478,34 @@ async function loadNextNFLGame(){
       createTeam(home)
     );
 
-    const dateElement = document.createElement("div");
-    dateElement.className = "nfl-date";
-    dateElement.textContent = formattedDate;
+    const date = document.createElement("div");
+    date.className = "nfl-date";
+    date.textContent = formattedDate;
 
     const status = document.createElement("div");
     status.className = "nfl-status";
-    status.textContent = "Upcoming NFL Game";
+    status.textContent = "UPCOMING NFL GAME";
 
     nflContainer.append(
       matchup,
-      dateElement,
+      date,
       status
     );
 
-  }catch(error){
-    console.error("NFL schedule error:",error);
+  } catch (error) {
 
-    nflContainer.textContent =
-      "NFL schedule is temporarily unavailable.";
+    console.error("NFL loading error:",error);
+    showNFLError();
+
   }
 }
 
+// Initial load
 loadNextNFLGame();
 
-// Refresh game data every 15 minutes.
+// Refresh every 15 minutes
 setInterval(loadNextNFLGame,15*60*1000);
+
 </script>
 
 </body>
