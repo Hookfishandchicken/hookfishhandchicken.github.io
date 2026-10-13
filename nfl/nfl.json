@@ -1,17 +1,6 @@
 {
   "games": [
     {
-      "date": "2026-10-13T00:15Z",
-      "home": {
-        "name": "Los Angeles Rams",
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png"
-      },
-      "away": {
-        "name": "Buffalo Bills",
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png"
-      }
-    },
-    {
       "date": "2026-10-16T00:15Z",
       "home": {
         "name": "Denver Broncos",
@@ -2278,5 +2267,5 @@
       }
     }
   ],
-  "updated": "2026-10-12T15:03:05.004599+00:00"
+  "updated": "2026-10-13T00:26:59.190569+00:00"
 }
