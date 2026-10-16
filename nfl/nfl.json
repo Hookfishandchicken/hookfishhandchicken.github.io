@@ -1,17 +1,6 @@
 {
   "games": [
     {
-      "date": "2026-10-16T00:15Z",
-      "home": {
-        "name": "Denver Broncos",
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png"
-      },
-      "away": {
-        "name": "Seattle Seahawks",
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png"
-      }
-    },
-    {
       "date": "2026-10-18T13:30Z",
       "home": {
         "name": "Jacksonville Jaguars",
@@ -2267,5 +2256,5 @@
       }
     }
   ],
-  "updated": "2026-10-15T21:11:12.409930+00:00"
+  "updated": "2026-10-16T04:04:22.073022+00:00"
 }
