@@ -1,94 +1,6 @@
 {
   "games": [
     {
-      "date": "2026-10-18T17:00Z",
-      "home": {
-        "name": "Atlanta Falcons",
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png"
-      },
-      "away": {
-        "name": "Chicago Bears",
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png"
-      }
-    },
-    {
-      "date": "2026-10-18T17:00Z",
-      "home": {
-        "name": "Cleveland Browns",
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png"
-      },
-      "away": {
-        "name": "Baltimore Ravens",
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png"
-      }
-    },
-    {
-      "date": "2026-10-18T17:00Z",
-      "home": {
-        "name": "Indianapolis Colts",
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png"
-      },
-      "away": {
-        "name": "Tennessee Titans",
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png"
-      }
-    },
-    {
-      "date": "2026-10-18T17:00Z",
-      "home": {
-        "name": "New England Patriots",
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png"
-      },
-      "away": {
-        "name": "New York Jets",
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png"
-      }
-    },
-    {
-      "date": "2026-10-18T17:00Z",
-      "home": {
-        "name": "New York Giants",
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png"
-      },
-      "away": {
-        "name": "New Orleans Saints",
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png"
-      }
-    },
-    {
-      "date": "2026-10-18T17:00Z",
-      "home": {
-        "name": "Philadelphia Eagles",
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png"
-      },
-      "away": {
-        "name": "Carolina Panthers",
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png"
-      }
-    },
-    {
-      "date": "2026-10-18T17:00Z",
-      "home": {
-        "name": "Tampa Bay Buccaneers",
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png"
-      },
-      "away": {
-        "name": "Pittsburgh Steelers",
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png"
-      }
-    },
-    {
-      "date": "2026-10-18T20:05Z",
-      "home": {
-        "name": "Los Angeles Rams",
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png"
-      },
-      "away": {
-        "name": "Arizona Cardinals",
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ari.png"
-      }
-    },
-    {
       "date": "2026-10-18T20:25Z",
       "home": {
         "name": "Kansas City Chiefs",
@@ -2245,5 +2157,5 @@
       }
     }
   ],
-  "updated": "2026-10-18T15:41:48.687148+00:00"
+  "updated": "2026-10-18T20:24:47.709481+00:00"
 }
