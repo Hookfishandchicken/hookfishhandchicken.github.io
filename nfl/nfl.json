@@ -1,17 +1,6 @@
 {
   "games": [
     {
-      "date": "2026-10-18T13:30Z",
-      "home": {
-        "name": "Jacksonville Jaguars",
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png"
-      },
-      "away": {
-        "name": "Houston Texans",
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png"
-      }
-    },
-    {
       "date": "2026-10-18T17:00Z",
       "home": {
         "name": "Atlanta Falcons",
@@ -2256,5 +2245,5 @@
       }
     }
   ],
-  "updated": "2026-10-18T10:45:19.287518+00:00"
+  "updated": "2026-10-18T15:41:48.687148+00:00"
 }
