@@ -1,17 +1,6 @@
 {
   "games": [
     {
-      "date": "2026-10-30T00:15Z",
-      "home": {
-        "name": "Green Bay Packers",
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png"
-      },
-      "away": {
-        "name": "Carolina Panthers",
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png"
-      }
-    },
-    {
       "date": "2026-11-01T18:00Z",
       "home": {
         "name": "Buffalo Bills",
@@ -1959,5 +1948,5 @@
       }
     }
   ],
-  "updated": "2026-10-29T22:38:39.143514+00:00"
+  "updated": "2026-10-30T05:17:42.499102+00:00"
 }
