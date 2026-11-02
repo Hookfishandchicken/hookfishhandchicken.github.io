@@ -1,17 +1,6 @@
 {
   "games": [
     {
-      "date": "2026-11-02T01:20Z",
-      "home": {
-        "name": "Washington Commanders",
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png"
-      },
-      "away": {
-        "name": "Philadelphia Eagles",
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png"
-      }
-    },
-    {
       "date": "2026-11-03T01:15Z",
       "home": {
         "name": "Seattle Seahawks",
@@ -1827,5 +1816,5 @@
       }
     }
   ],
-  "updated": "2026-11-01T21:54:35.431210+00:00"
+  "updated": "2026-11-02T05:28:52.771167+00:00"
 }
