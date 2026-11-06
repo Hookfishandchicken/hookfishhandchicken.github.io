@@ -1,17 +1,6 @@
 {
   "games": [
     {
-      "date": "2026-11-06T01:15Z",
-      "home": {
-        "name": "Baltimore Ravens",
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png"
-      },
-      "away": {
-        "name": "Jacksonville Jaguars",
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png"
-      }
-    },
-    {
       "date": "2026-11-08T14:30Z",
       "home": {
         "name": "Atlanta Falcons",
@@ -1805,5 +1794,5 @@
       }
     }
   ],
-  "updated": "2026-11-05T19:46:43.202413+00:00"
+  "updated": "2026-11-06T05:59:36.494108+00:00"
 }
