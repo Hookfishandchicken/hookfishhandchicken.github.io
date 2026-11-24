@@ -1,17 +1,6 @@
 {
   "games": [
     {
-      "date": "2026-11-24T01:15Z",
-      "home": {
-        "name": "Washington Commanders",
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png"
-      },
-      "away": {
-        "name": "Cincinnati Bengals",
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png"
-      }
-    },
-    {
       "date": "2026-11-26T01:00Z",
       "home": {
         "name": "Los Angeles Rams",
@@ -1354,5 +1343,5 @@
       }
     }
   ],
-  "updated": "2026-11-23T23:40:51.779631+00:00"
+  "updated": "2026-11-24T09:24:32.454681+00:00"
 }
